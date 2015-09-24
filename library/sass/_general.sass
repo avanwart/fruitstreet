@@ -1,0 +1,245 @@
+$black: #212121
+$ash: #f9f9f9
+$blue: #2484ce
+$lightBlue: #52bdce
+$mint: #e1f3f6
+$berry: #f6dcd8
+$red: #e63d25
+$yellow: #f3c432
+$pink: #dd338c
+$orange: #e97930
+
+$navbarHeight: 70px
+
+body
+	-webkit-font-smoothing: antialiased
+	font-family: 'Open Sans', sans-serif
+	//padding-top: $navbarHeight
+	background: #f0f0f0
+	font-size: 15px
+	h1, h2, h3, h4
+		font-family: 'Open Sans', sans-serif
+		font-weight: 100
+		margin-top: 0
+		small
+			display: inline-block
+			margin-left: 10px
+		&.push
+			margin-bottom: 1em
+	p
+		font-size: 1em
+		margin-bottom: 1.5em
+		line-height: 1.7
+
+
+section
+	padding: 4em 0
+	&.dark
+		color: white
+	&.light
+		background-color: white
+		color: $black
+	&.ash
+		background-color: $ash
+	&.yellow
+		background-color: $yellow
+		color: #53451a
+	&.mint
+		background-color: $mint
+	&.berry
+		background-color: $berry
+
+	.card
+		background: white
+		border: 1px solid #eaeaea
+
+	.btn-primary
+		background: $pink
+		border: 1px solid darken($pink, 15%)
+		&:hover
+			background: darken($pink, 15%)
+			border: 1px solid darken($pink, 15%)
+	.btn-lg
+		border-radius: 3px
+		padding: 14px 40px
+		i
+			font-size: .65em
+			top: 0
+
+	// Image Styles
+	.thumbnail
+		margin-bottom: 30px
+	.attachment-post-thumbnail
+		width: 140px
+		height: auto
+	.attachment-post-medium
+		width: 240px
+		height: auto
+	.alignleft
+		float: left
+		margin: 0 20px 10px 0
+	.alignright
+		float: right
+		margin: 0 0 10px 20px
+
+
+// Bootstrap UI component styles
+.nav-tabs
+	li
+		width: 20%
+		a
+			background: #f5f5f5
+			border-radius: 0
+			text-align: center
+			font-size: 15px
+			padding: 18px 15px
+			border: 1px solid #dadada
+			color: $black
+			&:hover
+				border: 1px solid #dadada
+				background: #fcfcfc
+		&.active
+			a
+				background: white
+				border-bottom-color: transparent
+				&:hover
+					border-bottom-color: transparent
+
+.tab-pane
+	background: white
+	border: 1px solid #ddd
+	border-top: none
+	padding: 40px
+	&#fans
+		img
+			margin: 0
+	h2
+		margin-top: 20px
+		font-size: 36px
+		text-align: left
+	p
+		font-size: 16px
+		line-height: 1.6
+	ul
+		margin: 0 0 30px 30px
+		list-style-position: outside
+		padding: 0
+		li
+			text-align: left
+			font-size: 16px
+			margin-bottom: 10px
+
+
+// Accordions
+.panel-group
+	margin-bottom: 3em
+	.panel
+		border-radius: 2px
+		margin-bottom: 1em
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, .2)
+		border: none
+		.panel-heading
+			background: white
+			border: none
+			.panel-title
+				padding: 4px 0
+				a
+					font-size: 1em
+					line-height: 1.5
+					text-shadow: none
+					font-weight: normal
+					.glyphicon
+						color: #666
+						font-size: .75em
+						margin-right: 10px
+					.glyphicon-minus
+						display: inline-block
+					.glyphicon-plus
+						display: none
+					&.collapsed
+						.glyphicon-plus
+							display: inline-block
+						.glyphicon-minus
+							display: none
+		// Body of the accordion				
+		.panel-collapse
+			.panel-body
+				border-top: 1px dotted #efefef
+				background: white
+				font-size: 14px
+				line-height: 1.6
+				padding: 10px 15px 15px
+				text-shadow: none
+				color: $black
+				p
+					margin-bottom: 0
+					font-weight: normal
+					text-shadow: none
+
+			&.in
+				.panel-body
+					// border-top: 1px solid $ash
+
+// Forms
+form
+	.control-label
+		font-size: 15px
+	.form-control
+		border-radius: 0
+		background: white
+		border-color: #ccc
+		box-shadow: none
+		color: $black
+		padding: 6px 8px
+		font-weight: normal
+		height: 36px
+		transition: width 1s ease-in-out
+		&.error
+			border-color: $blue
+	.placeholder
+		color: #aaaaaa
+	label.error
+		font-size: 13px
+		font-weight: normal
+		background: $blue
+		color: white
+		padding: 5px 10px
+		display: block
+		border-radius: 0 0 4px 4px
+		margin-top: -1px
+	input[type="tel"]
+		-webkit-user-select: none
+	select.form-control
+		-webkit-appearance: none
+		background: white url('../images/dd-arrow.jpg') 97% 12px no-repeat
+		background-size: 8px 12px
+		border-radius: 0
+		color: #999
+		font-weight: normal
+		&.hot
+			border-color: $blue
+			box-shadow: 0 0 15px white
+			outline: 1px
+		&.valid
+			color: $black
+	&.intake-form
+		.form-group
+			position: relative
+			margin-bottom: 6px
+			// .btn-primary
+			// 	padding: 12px 40px
+			// 	font-size: 16px
+			.form-control
+				border-color: #333
+				height: 40px
+			.col-sm-6
+				&.left
+					padding-right: 3px
+					position: relative
+					label.error
+						//right: 15px
+				&.right
+					padding-left: 3px
+					position: relative
+					label.error
+						right: 15px

@@ -1,0 +1,172 @@
+body.home
+	section
+		padding: 4em 0
+		h1, h2
+			font-size: 2.8em
+			text-align: center
+			&.flat
+				margin: 0 0 10px
+		.intro
+			text-align: center
+			margin-bottom: 2em
+			font-size: 18px
+	.motif
+		background-color: white
+		background-image: url('../images/motif.jpg')
+		background-size: auto 100%
+		background-position: 120% 50%
+		background-repeat: no-repeat
+		
+
+	.hero
+		min-height: 480px
+		background: url('../images/hero-bg.jpg') 100% 0% no-repeat
+		background-size: cover
+		text-align: center
+		h1
+			margin-top: 30px
+			font-size: 3.5em
+		h2
+			font-weight: normal
+			line-height: 1.5
+			font-size: 22px
+			margin-bottom: 1.5em
+		.btn-primary
+			//border: none
+
+
+	.logos
+		background: white
+		padding: 2em 0
+		.logo
+			text-align: center
+			vertical-align: middle
+			width: 20%
+			float: left
+		img
+			display: inline-block
+			vertical-align: middle
+			height: 32px
+			width: auto
+		.health
+			img
+				height: 20px
+				width: auto
+				margin-top: 3px
+
+	.features
+		.tabbable
+			margin-bottom: 30px
+		.nav-tabs
+			li
+				a
+					font-size: 14px
+		.tab-pane
+			padding: 100px
+			h3
+				margin-bottom: 30px
+			p
+				font-size: 14px
+				line-height: 1.7
+			ul
+				li
+					font-size: 14px
+					margin-bottom: 15px
+					max-width: 540px
+			&.provider, &.patient
+				padding: 60px 100px
+			&.webcam
+				background: white url('../images/webcam.jpg') right bottom no-repeat
+				background-size: 300px 415px
+				padding-bottom: 60px
+			&.motif
+				background: white url('../images/motif-right.jpg') right top no-repeat
+				background-size: 300px 415px
+			&.fitbit
+				background: white url('../images/fitbit.jpg') right top no-repeat
+				background-size: 300px 415px
+				padding-bottom: 60px
+
+
+
+	.testimonials
+		.thumbnail
+			position: relative
+			height: 130px
+			width: auto
+			display: inline-block
+			border-radius: 100px
+			border: 1px solid #dadada
+			margin: 0 0 20px
+		h1
+			margin-bottom: 40px
+			i
+				font-size: .8em
+				margin: 0 8px 0 4px
+		h2
+			font-weight: normal
+			font-size: 18px
+			margin: 0 0 20px
+		blockquote
+			display: block
+			border-radius: 2px
+			padding: 0 15px
+			font-style: italic
+			border: none
+			font-size: 15px
+			line-height: 1.5
+			margin: 0 0 30px
+			clear: both
+			small
+				margin-top: 20px
+				font-size: 14px
+				font-style: normal
+				font-weight: bold
+				color: $black
+				font-family: 'Open Sans', sans-serif
+				em
+					display: block
+					white-space: normal
+			img
+				height: 20px
+				width: auto
+
+	.pricing
+		background: white
+		.card
+			background: #f6f6f6
+			border: none
+			padding: 30px
+			text-align: center
+			position: relative
+			margin-bottom: 2em
+			.save
+				width: 56px
+				height: 56px
+				border-radius: 50%
+				position: absolute
+				display: block
+				line-height: 1.3
+				background: $blue
+				color: white
+				top: -20px
+				right: -20px
+				border: 3px solid white
+				text-align: center
+				padding-top: 10px
+				z-index: 10
+				font-size: 12px
+			h2
+				margin: 20px 0
+				font-size: 32px
+			h3
+				margin-bottom: 60px
+				font-size: 18px
+		.btn
+			width: 100%
+			max-width: 100%
+			padding: 10px 0
+			font-size: 14px
+		&.ash
+			.card
+				background: white

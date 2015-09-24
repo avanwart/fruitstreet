@@ -1,0 +1,65 @@
+$navbarHeight: 100px
+
+.navbar
+	background: white
+	margin: 0
+	.container
+		position: relative
+	.navbar-header
+		.navbar-brand
+			display: block
+			background: url('../images/logo.png') center 26px no-repeat
+			background-size: auto $navbarHeight/2.3
+			padding: 0
+			width: 250px
+			height: $navbarHeight
+			text-indent: -9999px
+	.navbar-collapse
+		.navbar-nav
+			margin-top: 20px
+			li
+				&.active
+					a
+						background: transparent
+				a
+					padding: 15px 20px
+					line-height: 40px
+					font-size: 16px
+					color: $black
+					&:hover
+						color: $blue
+				&:last-child
+					a
+						padding-right: 0
+						font-weight: bold
+			&.utility
+				position: absolute
+				right: 30px
+				top: 0
+				margin: 0
+				text-align: center
+				padding: 3px 5px 7px 5px
+				background: #f5f5f5
+				border-radius: 0 0 5px 5px
+				border: 1px solid #eaeaea
+				border-top: none
+
+				li
+					// display: inline-block
+					// vertical-align: middle
+					// float: none
+					padding: 5px 0 0
+					&:last-child
+						a
+							border-right: none
+							font-weight: normal
+					a
+						padding: 0 10px
+						border-right: 1px solid #dadada
+						font-size: 13px
+						color: #555
+						line-height: 1.2
+						display: block
+						&:hover
+							text-decoration: underline
+

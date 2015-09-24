@@ -1,0 +1,126 @@
+.main-content
+	.card
+		header
+			background-size: cover
+			background-position: 50% 50%
+			height: 260px
+			text-align: center
+			z-index: 1
+			position: relative
+			.overlay
+				height: 260px
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				text-align: center
+				background: rgba(0, 0, 0, .5)
+				z-index: 2
+				h1
+					font-size: 44px
+					color: white
+					line-height: 260px
+					border: none
+					text-shadow: 0 1px 0 rgba(0, 0, 0, .3)
+		article
+			padding: 40px
+			h3
+				font-size: 20px
+				font-weight: bold
+				margin-top: 40px
+				margin-bottom: 15px
+				padding-bottom: 5px
+				border-bottom: 1px solid $ash
+
+// About Pages
+.about
+	.well
+		padding-top: 0
+		background: transparent
+		border: none
+		box-shadow: none
+		h3
+			margin: 0 0 20px
+		ul
+			li
+				margin-bottom: 10px
+
+// Leadership Page
+.leadership
+	.col-sm-3
+		//padding: 0 5px
+	.team-member
+		position: relative
+		padding: 0
+		margin-left: 10px
+		&:hover
+			.caption
+				opacity: 1
+	.caption
+		position: absolute
+		display: block
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		opacity: 0
+		transition: opacity .25s ease-in-out
+		background: rgba(0, 0, 0, .6)
+		h3
+			text-align: left
+			color: white
+			position: absolute
+			top: 50%
+			left: 10px
+			right: 0
+			font-size: 19px
+			text-transform: uppercase
+			margin-top: -25px
+			span
+				display: inline-block
+			small
+				margin-top: 10px
+				display: block
+				color: white
+				text-transform: none
+	.card
+		.headshot-wrapper
+			float: left
+			margin: 0 20px 5px 0
+			width: 200px
+			display: block
+			text-align: center
+		.headshot
+			border: 1px solid #dadada
+			padding: 5px
+			clear: both
+			margin-bottom: 10px
+		.linkedin
+			text-align: right
+			font-size: 14px
+			margin-bottom: 0
+			.btn-default
+				font-size: 12px
+				border: 1px solid #dadada
+				background-image: linear-gradient(white, $ash)
+				&:hover
+					background: $ash
+			img
+				width: 14px
+				height: 14px
+				display: inline-block
+				vertical-align: middle
+				margin-right: 2px
+				margin-bottom: 2px
+		article
+			padding: 40px
+			border-bottom: 1px solid #efefef
+			&:last-child
+				border: none
+			h2
+				border: none
+				font-size: 28px
+				margin: 0 0 15px
+				font-weight: bold
+				small
+					font-size: 20px
