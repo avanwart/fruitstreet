@@ -47,54 +47,22 @@
 
 // Leadership Page
 .leadership
-	.col-sm-3
-		//padding: 0 5px
-	.team-member
-		position: relative
-		padding: 0
-		margin-left: 10px
-		&:hover
-			.caption
-				opacity: 1
-	.caption
-		position: absolute
-		display: block
-		top: 0
-		bottom: 0
-		right: 0
-		left: 0
-		opacity: 0
-		transition: opacity .25s ease-in-out
-		background: rgba(0, 0, 0, .6)
-		h3
-			text-align: left
-			color: white
-			position: absolute
-			top: 50%
-			left: 10px
-			right: 0
-			font-size: 19px
-			text-transform: uppercase
-			margin-top: -25px
-			span
-				display: inline-block
-			small
-				margin-top: 10px
-				display: block
-				color: white
-				text-transform: none
 	.card
-		.headshot-wrapper
-			float: left
-			margin: 0 20px 5px 0
-			width: 200px
-			display: block
+		.person
 			text-align: center
 		.headshot
-			border: 1px solid #dadada
+			border: none
+			border-radius: 50%
 			padding: 5px
 			clear: both
 			margin-bottom: 10px
+			width: 125px
+			height: auto
+			display: inline-block
+		p
+			text-align: center
+			small
+				display: block
 		.linkedin
 			text-align: right
 			font-size: 14px
@@ -112,15 +80,7 @@
 				vertical-align: middle
 				margin-right: 2px
 				margin-bottom: 2px
-		article
-			padding: 40px
-			border-bottom: 1px solid #efefef
-			&:last-child
-				border: none
-			h2
-				border: none
-				font-size: 28px
-				margin: 0 0 15px
-				font-weight: bold
-				small
-					font-size: 20px
+
+.contact
+	.card
+		padding: 40px

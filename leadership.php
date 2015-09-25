@@ -21,35 +21,48 @@ Template Name: Leadership
 					<div class="col-sm-9 main-content">
 						<div class="card">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-							<?php
-								$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
-								$url = $thumb['0'];
-							?>
-							<header style="background-image: url(<?=$url?>);">
-								<div class="overlay">
-									<h1 class="page-title"><?php the_title(); ?></h1>
+							<article>
+								<div class="row">
+									<div class="col-sm-12">
+										<h1 class="page-title"><?php the_title(); ?></h1>
+									</div>
 								</div>
-							</header>
-							<div class="row">
-								<div class="col-sm-12">
+								<div class="row">
+									<div class="col-sm-12">
+										<h2></h2>
+									</div>
 									<?php if( have_rows('leadership_team') ): while ( have_rows('leadership_team') ) : the_row(); ?>
-									<article class="row" id="<?php the_sub_field('short_name'); ?>">
-										<div class="col-sm-12">
-											<div class="headshot-wrapper">
-												<img src="<?php the_sub_field('headshot'); ?>" class="img-responsive headshot">	
+										
+										<div class="col-sm-3 person">
+
+											<a data-toggle="modal" href='#modal<?php the_sub_field('id'); ?>'><img src="<?php the_sub_field('headshot'); ?>" class="img-responsive headshot"></a>
+											<p><?php the_sub_field('name'); ?><small><?php the_sub_field('title'); ?></small></p>
+											<div class="modalfade" id="modal<?php the_sub_field('id'); ?>">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+															<h4 class="modal-title"><?php the_sub_field('name'); ?></h4>
+														</div>
+														<div class="modal-body">
+															<div class="bio">
+																<h2><?php the_sub_field('name'); ?><small><?php the_sub_field('title'); ?></small></h2>
+																<p><?php the_sub_field('bio'); ?></p>
+																<p class="linkedin">
+																	<a class="btn btn-default" href="<?php the_sub_field('linkedin_url'); ?>" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/library/images/linkedin-icon.jpg" class="linkedin"> <?php the_sub_field('name'); ?> on LinkedIn</a>
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
-											<div class="bio">
-												<h2><?php the_sub_field('name'); ?><small><?php the_sub_field('title'); ?></small></h2>
-												<p><?php the_sub_field('bio'); ?></p>
-												<p class="linkedin">
-													<a class="btn btn-default" href="<?php the_sub_field('linkedin_url'); ?>" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/library/images/linkedin-icon.jpg" class="linkedin"> <?php the_sub_field('name'); ?> on LinkedIn</a>
-												</p>
-											</div>
+
 										</div>
-									</article>
+
 									<?php endwhile; else : endif;  ?>
+
 								</div>
-							</div>
+							</article>
 							<?php endwhile; endif; ?>
 						</div>
 					</div>
@@ -58,9 +71,11 @@ Template Name: Leadership
 		</div>
 	</div>
 </section>
+
+
 <script>
 	jQuery(document).ready(function($){
-
+		//$('.modal').modal();
 	});
 </script>
 <?php get_footer(); ?>
