@@ -7,7 +7,7 @@ Template Name: Home Page
 <?php get_header(); ?>
 <section class="hero">
 	<div class="container">
-		<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-1">
+		<div class="col-sm-12 col-md-10  col-lg-8 col-lg-offset-1">
 			<h1>Telemedicine Within Reach</h1>
 			<h2>Meaningfully engage patients &amp; monitor health data with our <br>HIPAA compliant video software for your practice.</h2>
 			<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
