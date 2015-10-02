@@ -64,7 +64,11 @@
 
 								<div class="navbar-collapse collapse navbar-responsive-collapse navbar-right">
 									
-									<?php bones_main_nav(); ?>
+									<?php if( is_front_page() ){
+										bones_main_nav();
+									} else {
+										bones_secondary_nav();
+									} ?>
 
 									<ul class="nav navbar-nav utility">
 										<li><a href="#">Blog</a></li>

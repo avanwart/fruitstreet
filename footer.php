@@ -27,10 +27,9 @@
 
 						<!-- Footer Bucket 4 -->
 						<div class="col-sm-3 bucket badges">
-							<h3>Footer Bucket 4</h3>
+							<h3>Certifications</h3>
 							<img src="<?php bloginfo('template_directory'); ?>/library/images/bbb-logo.gif" alt="">
-							<img src="<?php bloginfo('template_directory'); ?>/library/images/bbb-logo.gif" alt="">
-							<img src="<?php bloginfo('template_directory'); ?>/library/images/bbb-logo.gif" alt="">
+							<img src="<?php bloginfo('template_directory'); ?>/library/images/certified-b.jpg" alt="">
 							<!-- disable bucket 4 if you want to put logos there instead -->
 							<?php /* footer_bucket_4(); */ ?>
 						</div>

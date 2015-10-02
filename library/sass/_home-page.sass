@@ -13,7 +13,7 @@ body.home
 	.motif
 		background-color: white
 		background-image: url('../images/motif.jpg')
-		background-size: auto 100%
+		background-size: auto 80%
 		background-position: 120% 50%
 		background-repeat: no-repeat
 		
@@ -38,6 +38,7 @@ body.home
 	.logos
 		background: white
 		padding: 2em 0
+		border-bottom: 1px solid #efefef
 		.logo
 			text-align: center
 			vertical-align: middle
@@ -62,7 +63,7 @@ body.home
 				a
 					font-size: 14px
 		.tab-pane
-			padding: 100px
+			padding: 80px 0 80px 80px
 			h3
 				margin-bottom: 30px
 			p
@@ -74,11 +75,15 @@ body.home
 					margin-bottom: 15px
 					max-width: 540px
 			&.provider, &.patient
-				padding: 60px 100px
+				//padding: 60px 0 60px 100px
 			&.webcam
-				background: white url('../images/webcam.jpg') right bottom no-repeat
-				background-size: 300px 415px
+				background: white url('../images/vsee-logo.jpg') right bottom no-repeat
+				background-size: 300px 150px
 				padding-bottom: 60px
+			&.vsee
+				img
+					margin-top: 60px
+					margin-left: -20px
 			&.motif
 				background: white url('../images/motif-right.jpg') right top no-repeat
 				background-size: 300px 415px
@@ -86,10 +91,18 @@ body.home
 				background: white url('../images/fitbit.jpg') right top no-repeat
 				background-size: 300px 415px
 				padding-bottom: 60px
+			.btn-lg
+				margin-right: 10px
+				font-size: 15px
+			.btn-default
+				color: $blue
+				border: none
 
 
 
 	.testimonials
+		.glyphicon-heart
+			color: $pink
 		.thumbnail
 			position: relative
 			height: 130px
@@ -107,14 +120,16 @@ body.home
 			font-weight: normal
 			font-size: 18px
 			margin: 0 0 20px
+		p
+			margin-bottom: 40px
 		blockquote
 			display: block
 			border-radius: 2px
 			padding: 0 15px
 			font-style: italic
 			border: none
-			font-size: 15px
-			line-height: 1.5
+			font-size: 14px
+			line-height: 1.7
 			margin: 0 0 30px
 			clear: both
 			small
@@ -127,6 +142,9 @@ body.home
 				em
 					display: block
 					white-space: normal
+					font-weight: normal
+					font-style: normal
+					font-size: 12px
 			img
 				height: 20px
 				width: auto
@@ -151,7 +169,7 @@ body.home
 				color: white
 				top: -20px
 				right: -20px
-				border: 3px solid white
+				border: 4px solid white
 				text-align: center
 				padding-top: 10px
 				z-index: 10
@@ -170,3 +188,8 @@ body.home
 		&.ash
 			.card
 				background: white
+	.faq
+		.panel-group
+			margin-bottom: 20px
+		.btn-primary
+			margin-top: 20px

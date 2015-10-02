@@ -32,17 +32,25 @@ Template Name: Press
 							</header>
 							
 							<?php if(get_field('press_articles')): ?>
+
 							<?php while(has_sub_field('press_articles')): ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-								<div class="col-sm-2 hidden-xs">
-									<img class="img-responsive" src="<?php the_sub_field('logo'); ?>" alt="">
-								</div>
-								<div class="col-sm-10">
-									<h2><a href="<?php the_sub_field('url'); ?>" target="_blank"><?php the_sub_field('title'); ?></a><small><?php the_sub_field('date'); ?></small></h2>
-									<p><?php the_sub_field('excerpt'); ?> <a href="<?php the_sub_field('url'); ?>" target="_blank">More&rarr;</a></p>
-								</div>
+								<table class="table">
+									<tbody>
+										<tr>
+											<td class="col-sm-9"><h2>
+												<small><?php the_sub_field('date'); ?></small>
+												<a href="<?php the_sub_field('url'); ?>" target="_blank"><?php the_sub_field('title'); ?></a></h2>
+											</td>
+											<td class="logo col-sm-3" style="background-image: url('<?php the_sub_field('logo'); ?>')">
+												&nbsp;
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</article> <!-- end article -->
 							<?php endwhile; endif; ?>
+
 							<?php wp_reset_postdata(); ?>
 							
 							<?php endwhile; endif; ?>
@@ -53,6 +61,7 @@ Template Name: Press
 		</div>
 	</div>
 </section>
+
 <script>
 	jQuery(document).ready(function($){
 		

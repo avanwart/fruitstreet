@@ -3,10 +3,14 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #f0f0f0;
   font-size: 15px; }
+  body.modal-open {
+    margin: 0; }
   body h1, body h2, body h3, body h4 {
     font-family: "Open Sans", sans-serif;
     font-weight: 100;
     margin-top: 0; }
+    body h1.flat, body h2.flat, body h3.flat, body h4.flat {
+      margin-bottom: 0; }
     body h1 small, body h2 small, body h3 small, body h4 small {
       display: inline-block;
       margin-left: 10px; }
@@ -30,22 +34,30 @@ section {
     background-color: #f3c432;
     color: #53451a; }
   section.mint {
-    background-color: #e1f3f6; }
+    background-color: #E8F1F3; }
   section.berry {
     background-color: #f6dcd8; }
+  section.motif {
+    background-color: white;
+    background-image: url("../images/motif.jpg");
+    background-size: auto 80%;
+    background-position: 120% 50%;
+    background-repeat: no-repeat; }
   section .card {
     background: white;
     border: 1px solid #eaeaea; }
   section .btn-primary {
-    background: #dd338c;
-    border: 1px solid #a81c65; }
+    background: #e63d25;
+    border: 1px solid #ab2614; }
     section .btn-primary:hover {
-      background: #a81c65;
-      border: 1px solid #a81c65; }
+      background: #ab2614;
+      border: 1px solid #ab2614; }
   section .btn-lg {
     border-radius: 3px;
-    padding: 14px 40px; }
+    padding: 14px 40px;
+    font-size: 16px; }
     section .btn-lg i {
+      margin-left: 8px;
       font-size: 0.65em;
       top: 0; }
   section .thumbnail {
@@ -62,6 +74,21 @@ section {
   section .alignright {
     float: right;
     margin: 0 0 10px 20px; }
+  section .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px; }
+    section .video-wrapper iframe {
+      background: white;
+      padding: 6px;
+      position: absolute;
+      border: 1px solid #ddd !important;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important; }
 
 .nav-tabs li {
   width: 20%; }
@@ -235,16 +262,15 @@ form.intake-form .form-group {
       top: 0;
       margin: 0;
       text-align: center;
-      padding: 3px 5px 7px 5px;
-      background: #f5f5f5;
+      padding: 3px 0 7px 5px;
       border-radius: 0 0 5px 5px;
-      border: 1px solid #eaeaea;
       border-top: none; }
       .navbar .navbar-collapse .navbar-nav.utility li {
         padding: 5px 0 0; }
         .navbar .navbar-collapse .navbar-nav.utility li:last-child a {
           border-right: none;
-          font-weight: normal; }
+          font-weight: normal;
+          padding-right: 0; }
         .navbar .navbar-collapse .navbar-nav.utility li a {
           padding: 0 10px;
           border-right: 1px solid #dadada;
@@ -269,7 +295,7 @@ body.home section {
 body.home .motif {
   background-color: white;
   background-image: url("../images/motif.jpg");
-  background-size: auto 100%;
+  background-size: auto 80%;
   background-position: 120% 50%;
   background-repeat: no-repeat; }
 body.home .hero {
@@ -287,7 +313,8 @@ body.home .hero {
     margin-bottom: 1.5em; }
 body.home .logos {
   background: white;
-  padding: 2em 0; }
+  padding: 2em 0;
+  border-bottom: 1px solid #efefef; }
   body.home .logos .logo {
     text-align: center;
     vertical-align: middle;
@@ -307,7 +334,7 @@ body.home .features .tabbable {
 body.home .features .nav-tabs li a {
   font-size: 14px; }
 body.home .features .tab-pane {
-  padding: 100px; }
+  padding: 80px 0 80px 80px; }
   body.home .features .tab-pane h3 {
     margin-bottom: 30px; }
   body.home .features .tab-pane p {
@@ -317,12 +344,13 @@ body.home .features .tab-pane {
     font-size: 14px;
     margin-bottom: 15px;
     max-width: 540px; }
-  body.home .features .tab-pane.provider, body.home .features .tab-pane.patient {
-    padding: 60px 100px; }
   body.home .features .tab-pane.webcam {
-    background: white url("../images/webcam.jpg") right bottom no-repeat;
-    background-size: 300px 415px;
+    background: white url("../images/vsee-logo.jpg") right bottom no-repeat;
+    background-size: 300px 150px;
     padding-bottom: 60px; }
+  body.home .features .tab-pane.vsee img {
+    margin-top: 60px;
+    margin-left: -20px; }
   body.home .features .tab-pane.motif {
     background: white url("../images/motif-right.jpg") right top no-repeat;
     background-size: 300px 415px; }
@@ -330,6 +358,14 @@ body.home .features .tab-pane {
     background: white url("../images/fitbit.jpg") right top no-repeat;
     background-size: 300px 415px;
     padding-bottom: 60px; }
+  body.home .features .tab-pane .btn-lg {
+    margin-right: 10px;
+    font-size: 15px; }
+  body.home .features .tab-pane .btn-default {
+    color: #2484ce;
+    border: none; }
+body.home .testimonials .glyphicon-heart {
+  color: #dd338c; }
 body.home .testimonials .thumbnail {
   position: relative;
   height: 130px;
@@ -347,14 +383,16 @@ body.home .testimonials h2 {
   font-weight: normal;
   font-size: 18px;
   margin: 0 0 20px; }
+body.home .testimonials p {
+  margin-bottom: 40px; }
 body.home .testimonials blockquote {
   display: block;
   border-radius: 2px;
   padding: 0 15px;
   font-style: italic;
   border: none;
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.7;
   margin: 0 0 30px;
   clear: both; }
   body.home .testimonials blockquote small {
@@ -366,7 +404,10 @@ body.home .testimonials blockquote {
     font-family: "Open Sans", sans-serif; }
     body.home .testimonials blockquote small em {
       display: block;
-      white-space: normal; }
+      white-space: normal;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 12px; }
   body.home .testimonials blockquote img {
     height: 20px;
     width: auto; }
@@ -390,7 +431,7 @@ body.home .pricing {
       color: white;
       top: -20px;
       right: -20px;
-      border: 3px solid white;
+      border: 4px solid white;
       text-align: center;
       padding-top: 10px;
       z-index: 10;
@@ -408,7 +449,34 @@ body.home .pricing {
     font-size: 14px; }
   body.home .pricing.ash .card {
     background: white; }
+body.home .faq .panel-group {
+  margin-bottom: 20px; }
+body.home .faq .btn-primary {
+  margin-top: 20px; }
 
+.bar {
+  transition: all 0.5s ease-in-out;
+  top: 0; }
+  .bar.affix {
+    top: 60px; }
+
+.main-content .card input[type="submit"] {
+  display: block;
+  width: 100%;
+  background: #e63d25;
+  border: 1px solid #c22c16;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 16px 40px;
+  line-height: 1;
+  height: auto; }
+  .main-content .card input[type="submit"]:hover {
+    background: #c22c16; }
+.main-content .card hr {
+  display: inline-block;
+  width: 30%;
+  margin: 40px 0; }
 .main-content .card header {
   background-size: cover;
   background-position: 50% 50%;
@@ -431,9 +499,9 @@ body.home .pricing {
       line-height: 260px;
       border: none;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); }
-.main-content .card article {
+.main-content .card article, .main-content .card .inner {
   padding: 40px; }
-  .main-content .card article h3 {
+  .main-content .card article h3, .main-content .card .inner h3 {
     font-size: 20px;
     font-weight: bold;
     margin-top: 40px;
@@ -450,9 +518,37 @@ body.home .pricing {
     margin: 0 0 20px; }
   .about .well ul li {
     margin-bottom: 10px; }
+.about form .form-group {
+  margin-bottom: 20px; }
+.about form input, .about form select {
+  border-radius: 2px;
+  height: 38px;
+  font-size: 16px; }
+.about form select {
+  padding-left: 15px; }
+.about form textarea {
+  min-height: 150px; }
+.about form .btn {
+  display: block;
+  width: 100%;
+  background: #e63d25;
+  border: 1px solid #c22c16;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 16px 40px;
+  line-height: 1;
+  height: auto; }
+  .about form .btn:hover {
+    background: #c22c16; }
+.about form select.active {
+  color: #212121; }
 
+.leadership h2 {
+  margin: 0 0 30px; }
 .leadership .card .person {
-  text-align: center; }
+  text-align: center;
+  min-height: 240px; }
 .leadership .card .headshot {
   border: none;
   border-radius: 50%;
@@ -483,15 +579,210 @@ body.home .pricing {
     vertical-align: middle;
     margin-right: 2px;
     margin-bottom: 2px; }
+.leadership .card hr {
+  display: inline-block;
+  width: 30%;
+  margin: 40px 0; }
+.leadership .card .modal-dialog {
+  width: 800px; }
+  .leadership .card .modal-dialog p, .leadership .card .modal-dialog h2 {
+    text-align: left; }
+    .leadership .card .modal-dialog p.linkedin, .leadership .card .modal-dialog h2.linkedin {
+      text-align: center; }
+  .leadership .card .modal-dialog .portrait {
+    display: inline-block;
+    height: auto;
+    margin-bottom: 20px; }
 
-.contact .card {
-  padding: 40px; }
+.press-hits .card article {
+  padding: 20px 20px 20px 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef; }
+  .press-hits .card article:last-child {
+    border: none; }
+  .press-hits .card article h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 0; }
+  .press-hits .card article small {
+    display: block;
+    text-align: left;
+    margin: 0 0 10px;
+    font-size: 14px; }
+  .press-hits .card article table {
+    border: none; }
+    .press-hits .card article table td {
+      border: none; }
+  .press-hits .card article .logo {
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.customers .card article h2 {
+  font-size: 18px;
+  margin-bottom: 10px; }
+
+.testimonials .card article {
+  border-bottom: 1px solid #efefef; }
+  .testimonials .card article blockquote {
+    border: none;
+    font-style: italic;
+    line-height: 1.7; }
+  .testimonials .card article img {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 150px;
+    height: auto; }
+
+.careers h2 {
+  margin-bottom: 30px; }
+.careers .panel-group .panel {
+  box-shadow: none; }
+  .careers .panel-group .panel .btn-primary {
+    padding: 13px 28px 14px;
+    font-size: 15px;
+    margin-top: 20px; }
+
+.contact .well {
+  background: #efefef;
+  border-radius: 0;
+  padding: 20px; }
+  .contact .well hr {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    border-color: #dadada; }
+.contact address span {
+  display: block;
+  margin-bottom: 8px; }
+.contact .google-map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .contact .google-map iframe {
+    background: white;
+    padding: 6px;
+    position: absolute;
+    border: 1px solid #ddd !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
+.signup .card {
+  width: 450px;
+  padding: 30px; }
+  .signup .card h1 {
+    font-size: 28px;
+    margin: 10px 0 40px; }
+  .signup .card .form-group input {
+    width: 100%; }
+  .signup .card .frm_submit {
+    margin: 0; }
+
+.product h2 {
+  font-size: 38px;
+  margin-bottom: 30px; }
+.product ul {
+  margin: 0 0 30px 20px;
+  padding: 0; }
+  .product ul li {
+    margin-bottom: 12px; }
+.product .btn-primary {
+  font-size: 16px; }
+.product .hero {
+  background: #212121 url("../images/hospital-bg.jpg") center bottom no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center; }
+  .product .hero h1 {
+    font-size: 50px; }
+  .product .hero h2 {
+    font-size: 24px;
+    margin: 0 0 40px; }
+  .product .hero ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 40px; }
+    .product .hero ul li {
+      font-size: 20px;
+      text-align: left;
+      margin-bottom: 10px; }
+      .product .hero ul li i {
+        font-size: 0.85em;
+        top: 0;
+        margin-right: 6px; }
+.product .app {
+  background: transparent;
+  padding: 5em 0; }
+.product .providers {
+  padding: 5em 0;
+  background: white url("../images/motif-medium.jpg") 87% 50% no-repeat;
+  background-size: auto 280px; }
+.product .patients {
+  padding: 5em 0;
+  background: transparent; }
+  .product .patients img {
+    width: 140px;
+    height: auto;
+    margin-top: 80px; }
+
+.pricing .hero {
+  background: #212121 url("../images/lap-pool.jpg") center bottom no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 5em 0; }
+  .pricing .hero h1 {
+    font-size: 50px; }
+  .pricing .hero h2 {
+    margin-bottom: 30px; }
+.pricing .plans h2 {
+  font-size: 38px;
+  text-align: center; }
+.pricing .plans .intro {
+  font-size: 20px;
+  text-align: center; }
+.pricing .plans .card {
+  background: #f6f6f6;
+  border: 1px solid #eaeaea;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2em; }
+  .pricing .plans .card .save {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    line-height: 1.3;
+    background: #2484ce;
+    color: white;
+    top: -20px;
+    right: -20px;
+    text-align: center;
+    padding-top: 12px;
+    z-index: 10;
+    font-size: 12px; }
+  .pricing .plans .card h2 {
+    margin: 20px 0;
+    font-size: 32px; }
+  .pricing .plans .card h3 {
+    margin-bottom: 60px;
+    font-size: 18px; }
+  .pricing .plans .card .btn {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 0;
+    font-size: 14px; }
 
 .footer {
   margin-top: 0; }
   .footer .bucket h3 {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 20px; }
   .footer .bucket ul li {
     margin-bottom: 10px; }
@@ -517,4 +808,4 @@ body.home .pricing {
     font-size: 13px; }
     .footer .copyright a {
       color: white;
-      text-decoration: underline; }
+      text-decoration: none; }

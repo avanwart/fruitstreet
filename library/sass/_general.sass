@@ -2,7 +2,7 @@ $black: #212121
 $ash: #f9f9f9
 $blue: #2484ce
 $lightBlue: #52bdce
-$mint: #e1f3f6
+$mint: #E8F1F3
 $berry: #f6dcd8
 $red: #e63d25
 $yellow: #f3c432
@@ -17,10 +17,14 @@ body
 	//padding-top: $navbarHeight
 	background: #f0f0f0
 	font-size: 15px
+	&.modal-open
+		margin: 0
 	h1, h2, h3, h4
 		font-family: 'Open Sans', sans-serif
 		font-weight: 100
 		margin-top: 0
+		&.flat
+			margin-bottom: 0
 		small
 			display: inline-block
 			margin-left: 10px
@@ -48,21 +52,29 @@ section
 		background-color: $mint
 	&.berry
 		background-color: $berry
+	&.motif
+		background-color: white
+		background-image: url('../images/motif.jpg')
+		background-size: auto 80%
+		background-position: 120% 50%
+		background-repeat: no-repeat
 
 	.card
 		background: white
 		border: 1px solid #eaeaea
 
 	.btn-primary
-		background: $pink
-		border: 1px solid darken($pink, 15%)
+		background: $red
+		border: 1px solid darken($red, 15%)
 		&:hover
-			background: darken($pink, 15%)
-			border: 1px solid darken($pink, 15%)
+			background: darken($red, 15%)
+			border: 1px solid darken($red, 15%)
 	.btn-lg
 		border-radius: 3px
 		padding: 14px 40px
+		font-size: 16px
 		i
+			margin-left: 8px
 			font-size: .65em
 			top: 0
 
@@ -81,6 +93,22 @@ section
 	.alignright
 		float: right
 		margin: 0 0 10px 20px
+
+	.video-wrapper
+		position: relative
+		padding-bottom: 56.25%
+		height: 0
+		overflow: hidden
+		margin-bottom: 20px
+		iframe
+			background: white
+			padding: 6px
+			position: absolute
+			border: 1px solid #ddd!important
+			top: 0
+			left: 0
+			width: 100% !important
+			height: 100% !important
 
 
 // Bootstrap UI component styles

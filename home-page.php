@@ -7,7 +7,7 @@ Template Name: Home Page
 <?php get_header(); ?>
 <section class="hero">
 	<div class="container">
-		<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+		<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-1">
 			<h1>Telemedicine Within Reach</h1>
 			<h2>Meaningfully engage patients &amp; monitor health data with our <br>HIPAA compliant video software for your practice.</h2>
 			<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
@@ -68,14 +68,19 @@ Template Name: Home Page
 								<div class="col-sm-8">
 									<h3>HIPAA Compliant Telehealth Clinic</h3>
 									<p>Fruit Street is designed for healthcare professionals who want to conduct HIPAA compliant video consultations with their patients and monitor/influence the diet and lifestyle of their patients using wearable devices and mobile applications. Fruit Street is a 100% HIPAA compliant telehealth solution.</p>
+									<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
 								</div>
 							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane fade webcam" id="tab2">
+						<div role="tabpanel" class="tab-pane fade vsee" id="tab2">
 							<div class="row">
 								<div class="col-sm-8">
 									<h3>HIPAA Compliant Video Powered by VSee</h3>
 									<p>Fruit Street enables healthcare professionals to conduct HIPAA compliant video consultations with their patients. The video engine found within Fruit Street is called VSee, which is the world’s most bandwidth efficient video conferencing technology. This means that you will be able to have high definition video calls with your patients without worrying about dropped calls or a choppy connection. VSee is so bandwidth efficient that is was selected by NASA for use on the International Space Station. VSee is a HIPAA compliant, FDA-registered video conferencing telehealth solution.</p>
+									<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=516" class="btn btn-lg btn-default">More on HIPAA Compliance <i class="glyphicon glyphicon-chevron-right"></i></a>
+								</div>
+								<div class="col-sm-4">
+									<img src="<?php bloginfo('template_directory'); ?>/library/images/vsee-logo.jpg" class="img-responsive" alt="">
 								</div>
 							</div>
 						</div>
@@ -84,50 +89,35 @@ Template Name: Home Page
 								<div class="col-sm-8">
 									<h3>Wearable Device &amp; Mobile App Integration</h3>
 									<p>The Fruit Street personal health record allows patients to upload data from wearable devices such as the FitBit Flex and FitBit Aria Scale. The Fruit Street mobile app also allows patients to share a visual food diary with their healthcare provider. Fruit Street will soon also integrate with FDA-approved blood pressure cuffs and glucometers for blood pressure and glucose monitoring. This wearable device and mobile app integration allows healthcare professionals to accurately monitor the diet and lifestyle of their patients’ in real time.</p>
+									<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
 								</div>
 							</div>
 						</div>
 						<div role="tabpanel" class="tab-pane fade provider" id="tab4">
+							<h3>Provider Portal</h3>
 							<div class="row">
-								<div class="col-sm-12">
-									<h3>Provider Portal</h3>
-									<p>The Fruit Street telehealth portal offers one interface for patients and one interface for healthcare professionals. The provider interface is designed for registered dietitians, primary care physicians, cardiologists, bariatric surgeons, health coaches, and other healthcare professionals that wish to set up a telehealth clinic. This HIPAA compliant telehealth portal was designed with the input of more than 50 physicians on our advisory board and we’re constantly adding new features based on feedback from our users. The user interface for healthcare providers allows for:</p>
-									<ul>
-										<li>Creating a custom URL for patients to log-in to which can be directly integrated into your existing website</li>
-										<li>Conduct HIPAA compliant video calls for your patients, including the ability to share screens</li>
-										<li>Collect payments for video consultations using Stripe</li>
-										<li>Custom your price for conducting video consultations with patients</li>
-										<li>Monitor your patients’ health data from wearable devices in real time</li>
-										<li>Set individual goals for patients and track progress</li>
-										<li>Provide comments to patients on photos of food in their visual food diary</li>
-										<li>Store your patient’s medical records such as blood tests for review during video calls</li>
-										<li>Customized initial intake health questionnaires</li>
-										<li>Maintain clinical notes during video calls</li>
-									</ul>
+								<div class="col-sm-7">
+									<p>The Fruit Street telehealth portal offers one interface for patients and one interface for healthcare professionals. The provider interface is designed for registered dietitians, primary care physicians, cardiologists, bariatric surgeons, health coaches, and other healthcare professionals that wish to set up a telehealth clinic. This HIPAA compliant telehealth portal was designed with the input of more than 50 physicians on our advisory board and we’re constantly adding new features based on feedback from our users.</p>
+									<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
+								</div>
+								<div class="col-sm-4">
+									<img src="<?php bloginfo('template_directory'); ?>/library/images/provider.jpg" class="img-responsive img-thumbnail" alt="">
 								</div>
 							</div>
 						</div>
 						<div role="tabpanel" class="tab-pane fade patient" id="tab5">
+							<h3>Patient Portal</h3>
 							<div class="row">
-								<div class="col-sm-12">
-									<h3>Patient Portal</h3>
-									<p>The Fruit Street portal allows patients to communicate and conduct video consultations with their patients in a HIPAA compliant fashion. Each patient has a personal health record which integrates with wearable devices and mobile applications such as the Fitbit Flex and FitBit Aria scale. These devices and apps provide data such as physical activity, sleep, heart rate, and dietary intake. These devices sync wirelessly with the Fruit Street personal health record and send data to the patient’s health care provider in real time. The Fruit Street patient portal allows patients to:</p>
-									<ul>
-										<li>Schedule HIPAA compliant video calls with their healthcare provider</li>
-										<li>Pay for HIPAA compliant video calls with a credit card</li>
-										<li>View their wearable device data from FitBit and the Fruit Street mobile app</li>
-										<li>View feedback from their healthcare provider about the photos of food they take with the Fruit Street mobile app</li>
-										<li>Send and receive HIPAA compliant chat messages to their healthcare providers</li>
-										<li>View goals that their healthcare provider set for them</li>
-										<li>View summaries of video consultations </li>
-									</ul>
+								<div class="col-sm-7">
+									<p>The Fruit Street portal allows patients to communicate and conduct video consultations with their patients in a HIPAA compliant fashion. Each patient has a personal health record which integrates with wearable devices and mobile applications such as the Fitbit Flex and FitBit Aria scale. These devices and apps provide data such as physical activity, sleep, heart rate, and dietary intake. These devices sync wirelessly with the Fruit Street personal health record and send data to the patient’s health care provider in real time.</p>
+									<div class="text-center"><a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a></div>
+								</div>
+								<div class="col-sm-4">
+									<img src="<?php bloginfo('template_directory'); ?>/library/images/patient2.jpg" class="img-responsive img-thumbnail" alt="">
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="text-center">
-					<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial</a>
 				</div>
 			</div>
 		</div>
@@ -150,7 +140,7 @@ Template Name: Home Page
 						<div class="card">
 							<h2>Monthly</h2>
 							<h3>$300/mo.</h3>
-							<a href="#" class="btn btn-default btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
+							<a href="#" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
 						</div>
 					</div>
 					<div class="col-sm-4">
@@ -165,7 +155,7 @@ Template Name: Home Page
 						<div class="card">
 							<h2>Enterprise</h2>
 							<h3><small>Contact for Pricing</small></h3>
-							<a href="contact" class="btn btn-default btn-lg">Contact Us <i class="glyphicon glyphicon-chevron-right"></i></a>
+							<a href="contact" class="btn btn-primary btn-lg">Contact Us <i class="glyphicon glyphicon-chevron-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -179,7 +169,7 @@ Template Name: Home Page
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1>Doctors &amp; Hospitals Love Us</h1>
+				<h1>Doctors &amp; Hospitals <i class="glyphicon glyphicon-heart"></i> Us</h1>
 			</div>
 		</div>
 		<!-- Get Testimonials Custom Fields from the Page -->
@@ -199,13 +189,13 @@ Template Name: Home Page
 		<?php endif; ?>
 		<!-- End of Testimonials dynamic content -->
 		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<!-- CTA -->
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<a href="?p=515" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
-					</div>
-				</div>
+			<div class="col-sm-12 text-center">
+				<p>Who else loves us? <a href="?p=488">More testimonials &raquo;</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
 			</div>
 		</div>
 	</div>
@@ -248,7 +238,10 @@ Template Name: Home Page
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center"><a href="#hero" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a></p>
+				<p class="text-center">
+					Don't see your question here?  <a href="?p=510">More FAQs &raquo;</a><br><br>
+					<a href="#hero" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
+				</p>
 			</div>
 		</div>
 	</div>
