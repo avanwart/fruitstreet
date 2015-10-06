@@ -9,7 +9,7 @@ Template Name: Sign Up
 <section class="standard signup">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 main-content">
+			<div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 main-content text-center">
 				<div class="card">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<h1 class="text-center">Start Your Free 14 Day Trial</h1>

@@ -360,7 +360,8 @@ body.home .features .tab-pane {
     padding-bottom: 60px; }
   body.home .features .tab-pane .btn-lg {
     margin-right: 10px;
-    font-size: 15px; }
+    font-size: 15px;
+    padding: 14px 36px; }
   body.home .features .tab-pane .btn-default {
     color: #2484ce;
     border: none; }
@@ -673,10 +674,14 @@ body.home .faq .btn-primary {
 
 .signup .card {
   width: 450px;
-  padding: 30px; }
+  padding: 30px 40px;
+  display: inline-block; }
   .signup .card h1 {
     font-size: 28px;
     margin: 10px 0 40px; }
+  .signup .card .form-group label {
+    display: block;
+    text-align: left; }
   .signup .card .form-group input {
     width: 100%; }
   .signup .card .frm_submit {
@@ -778,6 +783,35 @@ body.home .faq .btn-primary {
     padding: 10px 0;
     font-size: 14px; }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar .navbar-collapse .navbar-nav li a {
+    padding: 15px;
+    font-size: 14px; }
+
+  body.home .hero {
+    background-position: 70% 0; }
+    body.home .hero h1 {
+      font-size: 3em; }
+    body.home .hero h2 {
+      font-size: 20px; }
+  body.home .logos img {
+    height: 24px; }
+  body.home .logos .health img {
+    height: 16px;
+    width: auto; }
+  body.home .features .nav-tabs li a {
+    font-size: 12px; }
+  body.home .features .tab-pane {
+    padding: 60px; }
+    body.home .features .tab-pane .btn-lg {
+      padding: 14px 32px; }
+    body.home .features .tab-pane.motif {
+      background-image: url("../images/motif.jpg");
+      background-position: 120% 50%;
+      background-size: auto 80%; }
+    body.home .features .tab-pane.fitbit {
+      background-size: 200px auto;
+      background-position: 103% 60px; } }
 .footer {
   margin-top: 0; }
   .footer .bucket h3 {
