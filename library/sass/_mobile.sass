@@ -1,1 +1,168 @@
 @media screen and (max-width: 767px)
+	.navbar
+		.navbar-toggle
+			margin-top: 24px
+			border: none
+			&:hover
+				background: transparent
+				.icon-bar
+					background: $blue
+				.text
+					color: $blue
+			.icon-bar
+				background: $red
+				border-radius: 1px
+				height: 3px
+				width: 26px
+			.text
+				font-size: 9px
+				color: $red
+				text-transform: uppercase
+		.navbar-collapse
+			.navbar-nav
+				&.utility
+					position: relative
+					right: auto
+					top: auto
+					li
+						width: 33%
+						margin-bottom: 15px
+						a
+							font-size: 14px
+							&:hover
+								text-decoration: none
+								color: $blue
+				li
+					float: left
+					width: 50%
+					text-align: center
+					&.phone
+						clear: both
+						float: none
+						width: 100%
+						margin-bottom: 10px
+					a
+						padding: 15px
+						font-size: 16px
+						line-height: 1.2
+	body.home
+		section
+			overflow-x: hidden
+			padding: 3em 0
+			h1, h2
+				font-size: 2em
+			.btn-default
+				border: 1px solid #dadada
+		.hero
+			display: block
+			background-position: 78% 0%
+			min-height: 420px
+			h1
+				font-size: 2.5em
+				margin-top: 0
+			h2
+				font-size: 18px
+		.logos
+			.logo
+				width: 50%
+				&.top
+					margin-bottom: 15px
+				&.bottom
+					margin-top: 15px
+		.features
+			.tabbable
+				margin: 0
+			.nav-tabs
+				list-style-type: disc
+				border: none
+				border-bottom: 1px solid #efefef
+				margin-bottom: 15px
+				li
+					display: block
+					list-style-type: disc
+					margin-bottom: 10px
+					width: 50%
+					a
+						background: transparent
+						text-align: center
+						color: $blue
+						border: none
+						padding: 0
+					&.active
+						a
+							background: transparent
+							font-weight: bold
+							border: none
+							color: $blue
+					&:last-child
+						width: 100%
+			.tab-content
+				.tab-pane
+					padding: 0px
+					background: transparent
+					border: none
+					h3
+						font-size: 18px
+						text-align: left
+						margin-bottom: 10px
+						font-weight: normal
+						line-height: 1.3
+					.btn-lg
+						width: 100%
+						display: block
+						margin-bottom: 10px
+					.btn-default
+						border: 1px solid #dadada
+		.pricing 
+			.card
+				border: 1px solid #dadada
+				padding: 15px
+				text-align: left
+				margin-bottom: 1em
+				h2
+					margin: 0px 5px 0 0
+					display: inline-block
+					text-align: left
+					font-size: 26px
+					font-weight: normal
+				h3
+					display: inline-block
+					text-align: left
+					margin-bottom: 15px
+					small
+						margin: 0
+				.save
+					top: -10px
+					right: -10px
+					border: none
+					width: 52px
+					height: 52px
+		.testimonials
+			h1
+				font-size: 24px
+			blockquote
+				padding-bottom: 20px
+				border-bottom: 1px solid rgba(0, 0, 0, .05)
+				margin-bottom: 20px
+		.faq
+			h1
+				font-size: 22px
+			p.text-center
+				font-size: 14px
+			.panel-group .panel 
+				border: 1px solid #ccc
+			.panel-group .panel .panel-heading .panel-title a .glyphicon
+				margin-right: 4px
+	.footer
+		.bucket
+			text-align: center
+			padding-bottom: 20px
+			border-bottom: 1px solid rgba(0, 0, 0, .15)
+			margin-bottom: 20px
+			box-shadow: 0 1px 0 rgba(255, 255, 255, .05)
+			&.badges
+				border: none
+				box-shadow: none
+				margin: 0
+				img
+					margin-top: 0!important

@@ -20,7 +20,7 @@
 						</div>
 						
 						<!-- Footer Bucket 3 -->
-						<div class="col-sm-3 bucket">
+						<div class="col-sm-3 bucket resources">
 							<h3>Resources</h3>
 							<?php footer_bucket_3(); ?>
 						</div>
@@ -37,7 +37,7 @@
 
 				</div> <!-- end #inner-footer -->
 
-				<p class="text-center source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>&nbsp;&nbsp;| <a href="?p=175">Terms &amp; Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="?p=547">Privacy Policy</a></p>
+				<p class="text-center source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?><br class="visible-xs"><span class="hidden-xs">&nbsp;&nbsp;|</span> <a href="?p=175">Terms &amp; Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="?p=547">Privacy Policy</a></p>
 
 				</div> <!-- end .container -->
 

@@ -404,7 +404,6 @@ body.home .testimonials blockquote {
     color: #212121;
     font-family: "Open Sans", sans-serif; }
     body.home .testimonials blockquote small em {
-      display: block;
       white-space: normal;
       font-weight: normal;
       font-style: normal;
@@ -783,11 +782,19 @@ body.home .faq .btn-primary {
     padding: 10px 0;
     font-size: 14px; }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body.home .testimonials blockquote {
+    font-size: 13px; }
+  body.home .testimonials .thumbnail {
+    height: 100px;
+    width: auto; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar .navbar-collapse .navbar-nav li a {
     padding: 15px;
     font-size: 14px; }
 
+  body.home section h1, body.home section h2 {
+    font-size: 2.25em; }
   body.home .hero {
     background-position: 70% 0; }
     body.home .hero h1 {
@@ -811,7 +818,177 @@ body.home .faq .btn-primary {
       background-size: auto 80%; }
     body.home .features .tab-pane.fitbit {
       background-size: 200px auto;
-      background-position: 103% 60px; } }
+      background-position: 103% 60px; }
+    body.home .features .tab-pane.patient, body.home .features .tab-pane.provider {
+      background-image: url("../images/motif.jpg");
+      background-position: 120% 50%;
+      background-size: auto 80%;
+      background-repeat: no-repeat; }
+  body.home .testimonials blockquote {
+    font-size: 13px; }
+    body.home .testimonials blockquote small {
+      white-space: nowrap; }
+  body.home .testimonials .thumbnail {
+    height: 100px;
+    width: auto; } }
+@media screen and (max-width: 767px) {
+  .navbar .navbar-toggle {
+    margin-top: 24px;
+    border: none; }
+    .navbar .navbar-toggle:hover {
+      background: transparent; }
+      .navbar .navbar-toggle:hover .icon-bar {
+        background: #2484ce; }
+      .navbar .navbar-toggle:hover .text {
+        color: #2484ce; }
+    .navbar .navbar-toggle .icon-bar {
+      background: #e63d25;
+      border-radius: 1px;
+      height: 3px;
+      width: 26px; }
+    .navbar .navbar-toggle .text {
+      font-size: 9px;
+      color: #e63d25;
+      text-transform: uppercase; }
+  .navbar .navbar-collapse .navbar-nav.utility {
+    position: relative;
+    right: auto;
+    top: auto; }
+    .navbar .navbar-collapse .navbar-nav.utility li {
+      width: 33%;
+      margin-bottom: 15px; }
+      .navbar .navbar-collapse .navbar-nav.utility li a {
+        font-size: 14px; }
+        .navbar .navbar-collapse .navbar-nav.utility li a:hover {
+          text-decoration: none;
+          color: #2484ce; }
+  .navbar .navbar-collapse .navbar-nav li {
+    float: left;
+    width: 50%;
+    text-align: center; }
+    .navbar .navbar-collapse .navbar-nav li.phone {
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-bottom: 10px; }
+    .navbar .navbar-collapse .navbar-nav li a {
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.2; }
+
+  body.home section {
+    overflow-x: hidden;
+    padding: 3em 0; }
+    body.home section h1, body.home section h2 {
+      font-size: 2em; }
+    body.home section .btn-default {
+      border: 1px solid #dadada; }
+  body.home .hero {
+    display: block;
+    background-position: 78% 0%;
+    min-height: 420px; }
+    body.home .hero h1 {
+      font-size: 2.5em;
+      margin-top: 0; }
+    body.home .hero h2 {
+      font-size: 18px; }
+  body.home .logos .logo {
+    width: 50%; }
+    body.home .logos .logo.top {
+      margin-bottom: 15px; }
+    body.home .logos .logo.bottom {
+      margin-top: 15px; }
+  body.home .features .tabbable {
+    margin: 0; }
+  body.home .features .nav-tabs {
+    list-style-type: disc;
+    border: none;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 15px; }
+    body.home .features .nav-tabs li {
+      display: block;
+      list-style-type: disc;
+      margin-bottom: 10px;
+      width: 50%; }
+      body.home .features .nav-tabs li a {
+        background: transparent;
+        text-align: center;
+        color: #2484ce;
+        border: none;
+        padding: 0; }
+      body.home .features .nav-tabs li.active a {
+        background: transparent;
+        font-weight: bold;
+        border: none;
+        color: #2484ce; }
+      body.home .features .nav-tabs li:last-child {
+        width: 100%; }
+  body.home .features .tab-content .tab-pane {
+    padding: 0px;
+    background: transparent;
+    border: none; }
+    body.home .features .tab-content .tab-pane h3 {
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 10px;
+      font-weight: normal;
+      line-height: 1.3; }
+    body.home .features .tab-content .tab-pane .btn-lg {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px; }
+    body.home .features .tab-content .tab-pane .btn-default {
+      border: 1px solid #dadada; }
+  body.home .pricing .card {
+    border: 1px solid #dadada;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 1em; }
+    body.home .pricing .card h2 {
+      margin: 0px 5px 0 0;
+      display: inline-block;
+      text-align: left;
+      font-size: 26px;
+      font-weight: normal; }
+    body.home .pricing .card h3 {
+      display: inline-block;
+      text-align: left;
+      margin-bottom: 15px; }
+      body.home .pricing .card h3 small {
+        margin: 0; }
+    body.home .pricing .card .save {
+      top: -10px;
+      right: -10px;
+      border: none;
+      width: 52px;
+      height: 52px; }
+  body.home .testimonials h1 {
+    font-size: 24px; }
+  body.home .testimonials blockquote {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px; }
+  body.home .faq h1 {
+    font-size: 22px; }
+  body.home .faq p.text-center {
+    font-size: 14px; }
+  body.home .faq .panel-group .panel {
+    border: 1px solid #ccc; }
+  body.home .faq .panel-group .panel .panel-heading .panel-title a .glyphicon {
+    margin-right: 4px; }
+
+  .footer .bucket {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05); }
+    .footer .bucket.badges {
+      border: none;
+      box-shadow: none;
+      margin: 0; }
+      .footer .bucket.badges img {
+        margin-top: 0 !important; } }
 .footer {
   margin-top: 0; }
   .footer .bucket h3 {

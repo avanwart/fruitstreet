@@ -56,6 +56,7 @@
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
+										<span class="text">Menu</span>
 									</button>
 
 									<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
