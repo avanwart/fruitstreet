@@ -67,14 +67,16 @@
 									
 									<?php if( is_front_page() ){
 										bones_main_nav();
+										bones_mobile_main_nav();
 									} else {
 										bones_secondary_nav();
+										bones_mobile_secondary_nav();
 									} ?>
 
-									<ul class="nav navbar-nav utility">
-										<li><a href="#">Blog</a></li>
-										<li><a href="#">Help</a></li>
-										<li><a href="#">Log In</a></li>
+									<ul class="nav navbar-nav utility hidden-xs">
+										<li><a href="http://blog.fruitstreet.com/">Blog</a></li>
+										<li><a href="https://fruitstreet.zendesk.com/hc/en-us/requests/new">Help</a></li>
+										<li><a href="https://fruitstreet.com/admin/users/login">Log In</a></li>
 									</ul>
 
 								</div>

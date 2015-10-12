@@ -11,14 +11,14 @@ Template Name: Testimonials
 		<div class="row">
 			<div class="col-lg-11 col-md-12">
 				<div class="row">
-					<div class="col-sm-3 hidden-xs">
+					<div class="col-sm-12 col-md-3 hidden-xs hidden-sm">
 						<div class="well">
 							<?php
 								get_sidebar();
 							?>
 						</div>
 					</div>
-					<div class="col-sm-9 main-content">
+					<div class="col-sm-12 col-md-9 main-content">
 						<div class="card">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<?php
@@ -30,11 +30,17 @@ Template Name: Testimonials
 									<h1 class="page-title"><?php the_title(); ?></h1>
 								</div>
 							</header>
+
+							<div class="row visible-xs visible-sm">
+								<div class="col-sm-12">
+									<?php footer_bucket_2(); ?>
+								</div>
+							</div>
 							
 							<?php if(get_field('testimonials')): ?>
 
 							<?php while(has_sub_field('testimonials')): ?>
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'row clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'row testimonial clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 								<div class="col-sm-8">
 									<blockquote><?php the_sub_field('quote'); ?></blockquote>
 								</div>

@@ -3,6 +3,7 @@
 	top: 0
 	&.affix
 		top: 60px
+		transition: all .5s ease-in-out
 .main-content
 	.card
 		input[type="submit"]
@@ -207,34 +208,35 @@
 				margin-top: 20px
 
 .contact
-	.well
-		background: #efefef
-		border-radius: 0
-		padding: 20px
-		hr
-			width: 100%
-			display: block
-			margin: 20px 0
-			border-color: #dadada
-	address
-		span
-			display: block
-			margin-bottom: 8px
-	.google-map
-		position: relative
-		padding-bottom: 75%
-		height: 0
-		overflow: hidden
-		margin-bottom: 20px
-		iframe
-			background: white
-			padding: 6px
-			position: absolute
-			border: 1px solid #ddd!important
-			top: 0
-			left: 0
-			width: 100% !important
-			height: 100% !important
+	.main-content
+		.well
+			background: #efefef
+			border-radius: 0
+			padding: 20px
+			hr
+				width: 100%
+				display: block
+				margin: 20px 0
+				border-color: #dadada
+		address
+			span
+				display: block
+				margin-bottom: 8px
+		.google-map
+			position: relative
+			padding-bottom: 75%
+			height: 0
+			overflow: hidden
+			margin-bottom: 20px
+			iframe
+				background: white
+				padding: 6px
+				position: absolute
+				border: 1px solid #ddd!important
+				top: 0
+				left: 0
+				width: 100% !important
+				height: 100% !important
 
 .signup
 	.card
@@ -298,13 +300,11 @@
 		padding: 5em 0
 		background: transparent
 		img
-			width: 140px
-			height: auto
-			margin-top: 80px
+			width: 320px
 
 .pricing
 	.hero
-		background: #212121 url('../images/lap-pool.jpg') center bottom no-repeat
+		background: #212121 url('../images/rowers.jpg') center bottom no-repeat
 		background-size: cover
 		color: white
 		padding: 5em 0
@@ -352,5 +352,10 @@
 				max-width: 100%
 				padding: 10px 0
 				font-size: 14px
+
+.thank-you
+	.card
+		article
+			padding: 40px
 
 		

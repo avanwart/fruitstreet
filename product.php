@@ -10,15 +10,15 @@ Template Name: Product
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1 class="text-center">HIPAA Compliant Telehealth Software</h1>
-					<h2 class="text-center">Monitor patients diet and lifestyle with wearable devices and mobile applications.</h2>
+					<h1 class="text-center">HIPAA Compliant <br class="visible-sm"/>Telehealth Software</h1>
+					<h2 class="text-center">Monitor patients diet and lifestyle with wearable devices <br class="visible-sm"/>and mobile applications.</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-12 col-md-8 col-md-offset-2 text-center">
 					<ul>
 						<li><i class="glyphicon glyphicon-ok"></i> HIPAA Compliant Video Consultations</li>
-						<li><i class="glyphicon glyphicon-ok"></i> Access to wearable device data such as FitBit in real time</li>
+						<li><i class="glyphicon glyphicon-ok"></i> Access to wearable device data such as Fitbit in real time</li>
 						<li><i class="glyphicon glyphicon-ok"></i> Easy scheduling and payment collection with Stripe</li>
 						<li><i class="glyphicon glyphicon-ok"></i> Review medical records and test results</li>
 						<li><i class="glyphicon glyphicon-ok"></i> Share your screen and make comments</li>
@@ -34,16 +34,16 @@ Template Name: Product
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-8 col-sm-offset-2 col-md-6">
 							<div class="video-wrapper">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/_wJ9KEuyFqU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/CvVCI14fxjE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
-						<div class="col-sm-6">
-							<h2>The Fruit Street App</h2>
+						<div class="col-sm-10 col-sm-offset-1 col-md-6">
+							<h2 class="text-center">The Fruit Street App</h2>
 							<ul>
-								<li>Patients can easily track their physical activity levels using wearable devices and view your FitBit data (coming soon)</li>
-								<li> The user dashboard provides patients with a snapshot of number of steps taken, hours slept, calories burned, heart rate, blood pressure and blood glucose. </li>
+								<li>Patients can easily track their physical activity levels using wearable devices and view their Fitbit data (coming soon)</li>
+								<li>The user dashboard provides patients with a snapshot of number of steps taken, hours slept, calories burned, heart rate, blood pressure and blood glucose</li>
 								<li>Easily create a food diary and take notes alongside your images </li>
 								<li>View goals your healthcare provider sets for you (coming soon)</li>
 								<li>Conduct a video consultation with your healthcare provider (coming soon)</li>
@@ -57,7 +57,7 @@ Template Name: Product
 	<section class="providers motif">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-sm-offset-1">
+				<div class="col-sm-9 col-md-6 col-md-offset-1">
 					<h2>Special Features For Providers</h2>
 					<ul>
 						<li>Create customized health questionnaires and intake forms</li>
@@ -75,10 +75,10 @@ Template Name: Product
 	<section class="patients">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-md-4 text-center">
-					<img src="<?php bloginfo('template_directory'); ?>/library/images/orange.png" alt="">
+				<div class="col-sm-4 col-md-4 text-center">
+					<img src="<?php bloginfo('template_directory'); ?>/library/images/patient2.jpg" class="img-responsive img-thumbnail" alt="">
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-8 col-md-6">
 					<h2>Special Features For Patients</h2>
 					<ul>
 						<li>Sync your Fitbit accounts and share the data with your healthcare provider</li>

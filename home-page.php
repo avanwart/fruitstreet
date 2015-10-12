@@ -8,8 +8,8 @@ Template Name: Home Page
 <section class="hero">
 	<div class="container">
 		<div class="col-sm-12 col-md-10  col-lg-8 col-lg-offset-1">
-			<h1>Telemedicine Within Reach</h1>
-			<h2>Meaningfully engage patients &amp; monitor health data with our <br class="hidden-xs"/>HIPAA compliant video software for your practice.</h2>
+			<h1>Telehealth Software for <br class="visible-lg visible-md visible-sm"/>Medical &amp; Health Professionals</h1>
+			<h2>Conduct HIPAA-compliant paid video calls, monitor patients' diet and lifestyle, and improve patient outcomes.</h2>
 			<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
 		</div>
 	</div>
@@ -22,12 +22,10 @@ Template Name: Home Page
 			<div class="logo bottom"><img src="<?php bloginfo('template_directory'); ?>/library/images/yahoo-logo.jpg" alt=""></div>
 			<div class="logo bottom"><img src="<?php bloginfo('template_directory'); ?>/library/images/wired-logo.jpg" alt=""></div>
 			<div class="logo health hidden-xs"><img src="<?php bloginfo('template_directory'); ?>/library/images/health-logo.jpg" alt=""></div>
-			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Example of a section with a tabbed interface -->
 <section class="features ash" id="features">
 	<div class="container">
 		<div class="row">
@@ -73,7 +71,7 @@ Template Name: Home Page
 							<div class="row">
 								<div class="col-sm-10 col-md-8">
 									<h3>Wearable Device &amp; Mobile App Integration</h3>
-									<p>The Fruit Street personal health record allows patients to upload data from wearable devices such as the FitBit Flex and FitBit Aria Scale. The Fruit Street mobile app also allows patients to share a visual food diary with their healthcare provider. Fruit Street will soon also integrate with FDA-approved blood pressure cuffs and glucometers for blood pressure and glucose monitoring. This wearable device and mobile app integration allows healthcare professionals to accurately monitor the diet and lifestyle of their patients’ in real time.</p>
+									<p>The Fruit Street personal health record allows patients to upload data from wearable devices such as the Fitbit Flex and Fitbit Aria Scale. The Fruit Street mobile app also allows patients to share a visual food diary with their healthcare provider. Soon Fruit Street will integrate with FDA-approved blood pressure cuffs and glucometers for blood pressure and glucose monitoring. This wearable device and mobile app integration allows healthcare professionals to accurately monitor the diet and lifestyle of their patients in real time.</p>
 									<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
 								</div>
 							</div>
@@ -85,8 +83,8 @@ Template Name: Home Page
 									<p>The Fruit Street telehealth portal offers one interface for patients and one interface for healthcare professionals. The provider interface is designed for registered dietitians, primary care physicians, cardiologists, bariatric surgeons, health coaches, and other healthcare professionals that wish to set up a telehealth clinic. This HIPAA compliant telehealth portal was designed with the input of more than 50 physicians on our advisory board and we’re constantly adding new features based on feedback from our users.</p>
 									<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
 								</div>
-								<div class="col-md-4 hidden-sm">
-									<img src="<?php bloginfo('template_directory'); ?>/library/images/provider.jpg" class="img-responsive img-thumbnail" alt="">
+								<div class="col-md-4 hidden-sm hidden-xs">
+									<img src="<?php bloginfo('template_directory'); ?>/library/images/provider2.jpg" class="img-responsive img-thumbnail" alt="">
 								</div>
 							</div>
 						</div>
@@ -94,11 +92,11 @@ Template Name: Home Page
 							<h3>Patient Portal</h3>
 							<div class="row">
 								<div class="col-sm-12 col-md-7">
-									<p>The Fruit Street portal allows patients to communicate and conduct video consultations with their patients in a HIPAA compliant fashion. Each patient has a personal health record which integrates with wearable devices and mobile applications such as the Fitbit Flex and FitBit Aria scale. These devices and apps provide data such as physical activity, sleep, heart rate, and dietary intake. These devices sync wirelessly with the Fruit Street personal health record and send data to the patient’s health care provider in real time.</p>
+									<p>The Fruit Street patient portal allows healthcare providers to communicate and conduct video consultations with their patients using HIPAA compliant telehealth software. Each patient has a personal health record which integrates with wearable devices and mobile applications such as the Fitbit Flex and Fitbit Aria scale. These devices and apps record data such as physical activity, sleep, heart rate, and dietary intake. These devices sync wirelessly with the Fruit Street personal health record and send data to the patient’s health care provider in real time.</p>
 									<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
 								</div>
-								<div class="col-md-4 hidden-sm">
-									<img src="<?php bloginfo('template_directory'); ?>/library/images/patient2.jpg" class="img-responsive img-thumbnail" alt="">
+								<div class="col-md-4 hidden-sm hidden-xs">
+									<img src="<?php bloginfo('template_directory'); ?>/library/images/patient3.jpg" class="img-responsive img-thumbnail" alt="">
 								</div>
 							</div>
 						</div>
@@ -109,7 +107,6 @@ Template Name: Home Page
 	</div>
 </section>
 
-<!-- Example of how we do pricing -->
 <section class="pricing" id="pricing">
 	<div class="container">
 		<div class="row">
@@ -132,14 +129,14 @@ Template Name: Home Page
 						<div class="card">
 							<div class="save">Save<br>20%</div>
 							<h2>Yearly</h2>
-							<h3>$20/mo.</h3>
+							<h3>$200/mo.</h3>
 							<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="card">
 							<h2>Enterprise</h2>
-							<h3><small>Contact for Pricing</small></h3>
+							<h3>Contact for Pricing</h3>
 							<a href="contact" class="btn btn-primary btn-lg">Contact Us <i class="glyphicon glyphicon-chevron-right"></i></a>
 						</div>
 					</div>
@@ -149,8 +146,7 @@ Template Name: Home Page
 	</div>
 </section>
 
-<!-- Example of how we do testimonials -->
-<section class="testimonials mint">
+<section class="testimonials babyBlue">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -159,23 +155,23 @@ Template Name: Home Page
 		</div>
 		<!-- Get Testimonials Custom Fields from the Page -->
 		<?php if(get_field('testimonials')): ?>
-		<div class="row">
-			<!-- open the Repeater loop -->
-			<?php while(has_sub_field('testimonials')): ?>
-			<div class="col-sm-4 text-center">
-				<img class="thumbnail img-circle" src="<?php the_sub_field('headshot'); ?>" alt="">
-				<blockquote>
-					<?php the_sub_field('quote'); ?> <small><?php the_sub_field('name'); ?>	<em><?php the_sub_field('company'); ?></em></small>
-				</blockquote>
+			<div class="row">
+				<!-- open the Repeater loop -->
+				<?php while(has_sub_field('testimonials')): ?>
+					<div class="col-sm-4 text-center testimonial">
+						<img class="thumbnail img-circle" src="<?php the_sub_field('headshot'); ?>" alt="">
+						<blockquote>
+							<?php the_sub_field('quote'); ?> <small><?php the_sub_field('name'); ?>	<em><?php the_sub_field('company'); ?></em></small>
+						</blockquote>
+					</div>
+				<?php endwhile; ?>
+				<!-- close the Repeater loop -->
 			</div>
-			<?php endwhile; ?>
-			<!-- close the Repeater loop -->
-		</div>
 		<?php endif; ?>
 		<!-- End of Testimonials dynamic content -->
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<p>Who else loves us? <a href="?p=488">More testimonials &raquo;</a></p>
+				<p><a href="?p=488">More testimonials &raquo;</a></p>
 			</div>
 		</div>
 		<div class="row">
@@ -198,24 +194,24 @@ Template Name: Home Page
 				<!-- Get FAQ Repeater custom fields from this Page -->
 				<?php if(get_field('faq')): ?>
 					<div class="panel-group" id="accordion">
-					<!-- open the loop -->
-					<?php while(has_sub_field('faq')): ?>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php the_sub_field('id'); ?>" class="collapsed">
-										<i class="glyphicon glyphicon-plus"></i><i class="glyphicon glyphicon-minus"></i>	<?php the_sub_field('question'); ?>
-									</a>
-								</h4>
-							</div>
-							<div id="collapse<?php the_sub_field('id'); ?>" class="panel-collapse collapse">
-								<div class="panel-body">
-									<?php the_sub_field('answer'); ?>
+						<!-- open the loop -->
+						<?php while(has_sub_field('faq')): ?>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php the_sub_field('id'); ?>" class="collapsed">
+											<i class="glyphicon glyphicon-plus"></i><i class="glyphicon glyphicon-minus"></i>	<?php the_sub_field('question'); ?>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse<?php the_sub_field('id'); ?>" class="panel-collapse collapse">
+									<div class="panel-body">
+										<?php the_sub_field('answer'); ?>
+									</div>
 								</div>
 							</div>
-						</div>
-					<?php endwhile; ?>
-					<!-- close the loop -->
+						<?php endwhile; ?>
+						<!-- close the loop -->
 					</div>
 				<?php endif; ?>
 				<!-- end of Repeater custom fields and dynamic content -->
@@ -231,6 +227,44 @@ Template Name: Home Page
 		</div>
 	</div>
 </section>
+
+<div class="modal fade" id="login">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Modal title</h4>
+			</div>
+			<div class="modal-body">
+				<form action="https://fruitstreet.com/admin/users/login" novalidate="novalidate" id="LoginForm" class="form-vertical login-form" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"><input type="hidden" name="data[_Token][csrfToken]" value="1cfa2f07ee979fb0d63b4c3020db70f54a815400" id="_TokenCsrfToken"><input type="hidden" name="data[_Token][key]" id="Token154534633" value="42d7a74582e2c4f9609e17acb2b0f832497d2b75"></div>
+					<!-- Input Fields -->
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="fa fa-fw fa-user"></span></span>
+							<input name="data[AppUser][username]" class="form-control valid" placeholder="Username" autocomplete="off" type="text" id="AppUserUsername" required="required" aria-required="true" aria-invalid="false">            </div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon"><span class="fa fa-fw fa-lock"></span></span>
+								<input name="data[AppUser][password]" class="form-control" placeholder="Password" type="password" id="AppUserPassword" required="required" aria-required="true">            </div>
+							</div>
+							<!-- /Input Fields -->
+
+							<!-- Form Actions -->
+							<div class="form-actions text-right">
+								<button type="submit" class="submit btn btn-primary">
+									Sign In <i class="fa fa-angle-right"></i>
+								</button>
+							</div>
+							<div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="563ebab47539464574e6038fe5b462817c5ebcca%3A" id="TokenFields368141681"><input type="hidden" name="data[_Token][unlocked]" value="" id="TokenUnlocked86238078"></div></form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
 <script>
 	jQuery(document).ready(function($){
@@ -266,6 +300,6 @@ Template Name: Home Page
 		}
 
 	});
-</script>
+			</script>
 
-<?php get_footer(); ?>
+			<?php get_footer(); ?>

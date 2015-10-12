@@ -6,7 +6,7 @@ Template Name: Pricing
 
 <?php get_header(); ?>
 <div class="pricing">
-	<section class="hero">
+	<?php /* <section class="hero">
 		<div class="container">
 			<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 text-center">
 				<h1>Get Started Now for $0</h1>
@@ -14,7 +14,7 @@ Template Name: Pricing
 				<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
 			</div>
 		</div>
-	</section>
+	</section> */ ?>
 
 	<section class="plans">
 		<div class="container">
@@ -31,22 +31,22 @@ Template Name: Pricing
 							<div class="card">
 								<h2>Monthly</h2>
 								<h3>$300/mo.</h3>
-								<a href="#" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
+								<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="card">
 								<div class="save">Save<br>20%</div>
 								<h2>Yearly</h2>
-								<h3>$20/mo.</h3>
-								<a href="#" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
+								<h3>$200/mo.</h3>
+								<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="card">
 								<h2>Enterprise</h2>
 								<h3><small>Contact for Pricing</small></h3>
-								<a href="contact" class="btn btn-primary btn-lg">Contact Us <i class="glyphicon glyphicon-chevron-right"></i></a>
+								<a href="<?php bloginfo('url'); ?>/contact" class="btn btn-primary btn-lg">Contact Us <i class="glyphicon glyphicon-chevron-right"></i></a>
 							</div>
 						</div>
 					</div>

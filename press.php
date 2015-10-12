@@ -11,14 +11,14 @@ Template Name: Press
 		<div class="row">
 			<div class="col-lg-11 col-md-12">
 				<div class="row">
-					<div class="col-sm-3 hidden-xs">
+					<div class="col-sm-12 col-md-3 hidden-xs hidden-sm">
 						<div class="well">
 							<?php
 								get_sidebar();
 							?>
 						</div>
 					</div>
-					<div class="col-sm-9 main-content">
+					<div class="col-sm-12 col-md-9 main-content">
 						<div class="card">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<?php
@@ -30,7 +30,11 @@ Template Name: Press
 									<h1 class="page-title"><?php the_title(); ?></h1>
 								</div>
 							</header>
-							
+							<div class="row visible-xs visible-sm">
+								<div class="col-sm-12">
+									<?php footer_bucket_1(); ?>
+								</div>
+							</div>
 							<?php if(get_field('press_articles')): ?>
 
 							<?php while(has_sub_field('press_articles')): ?>

@@ -23,6 +23,12 @@ body {
 
 section {
   padding: 4em 0; }
+  section article ul {
+    margin-bottom: 30px; }
+    section article ul li {
+      margin-bottom: 15px; }
+  section li.current-menu-item a {
+    font-weight: bold; }
   section.dark {
     color: white; }
   section.light {
@@ -33,6 +39,9 @@ section {
   section.yellow {
     background-color: #f3c432;
     color: #53451a; }
+  section.babyBlue {
+    background-color: #ebf2f7;
+    color: #212121; }
   section.mint {
     background-color: #E8F1F3; }
   section.berry {
@@ -279,7 +288,7 @@ form.intake-form .form-group {
           line-height: 1.2;
           display: block; }
           .navbar .navbar-collapse .navbar-nav.utility li a:hover {
-            text-decoration: underline; }
+            color: #2484ce; }
 
 body.home section {
   padding: 4em 0; }
@@ -304,8 +313,9 @@ body.home .hero {
   background-size: cover;
   text-align: center; }
   body.home .hero h1 {
-    margin-top: 30px;
-    font-size: 3.5em; }
+    margin-top: 20px;
+    font-size: 3.25em;
+    line-height: 1.3; }
   body.home .hero h2 {
     font-weight: normal;
     line-height: 1.5;
@@ -431,11 +441,10 @@ body.home .pricing {
       color: white;
       top: -20px;
       right: -20px;
-      border: 4px solid white;
       text-align: center;
-      padding-top: 10px;
+      padding-top: 11px;
       z-index: 10;
-      font-size: 12px; }
+      font-size: 13px; }
     body.home .pricing .card h2 {
       margin: 20px 0;
       font-size: 32px; }
@@ -458,7 +467,8 @@ body.home .faq .btn-primary {
   transition: all 0.5s ease-in-out;
   top: 0; }
   .bar.affix {
-    top: 60px; }
+    top: 60px;
+    transition: all 0.5s ease-in-out; }
 
 .main-content .card input[type="submit"] {
   display: block;
@@ -643,25 +653,25 @@ body.home .faq .btn-primary {
     font-size: 15px;
     margin-top: 20px; }
 
-.contact .well {
+.contact .main-content .well {
   background: #efefef;
   border-radius: 0;
   padding: 20px; }
-  .contact .well hr {
+  .contact .main-content .well hr {
     width: 100%;
     display: block;
     margin: 20px 0;
     border-color: #dadada; }
-.contact address span {
+.contact .main-content address span {
   display: block;
   margin-bottom: 8px; }
-.contact .google-map {
+.contact .main-content .google-map {
   position: relative;
   padding-bottom: 75%;
   height: 0;
   overflow: hidden;
   margin-bottom: 20px; }
-  .contact .google-map iframe {
+  .contact .main-content .google-map iframe {
     background: white;
     padding: 6px;
     position: absolute;
@@ -729,12 +739,10 @@ body.home .faq .btn-primary {
   padding: 5em 0;
   background: transparent; }
   .product .patients img {
-    width: 140px;
-    height: auto;
-    margin-top: 80px; }
+    width: 320px; }
 
 .pricing .hero {
-  background: #212121 url("../images/lap-pool.jpg") center bottom no-repeat;
+  background: #212121 url("../images/rowers.jpg") center bottom no-repeat;
   background-size: cover;
   color: white;
   padding: 5em 0; }
@@ -781,6 +789,9 @@ body.home .faq .btn-primary {
     max-width: 100%;
     padding: 10px 0;
     font-size: 14px; }
+
+.thank-you .card article {
+  padding: 40px; }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   body.home .testimonials blockquote {
@@ -830,10 +841,38 @@ body.home .faq .btn-primary {
       white-space: nowrap; }
   body.home .testimonials .thumbnail {
     height: 100px;
-    width: auto; } }
+    width: auto; }
+
+  .product section h2 {
+    font-size: 28px; }
+  .product .providers {
+    background-position: 150% 50%; }
+
+  body.page section, body.single section {
+    padding: 2em 0; }
+    body.page section .container .card ul.footer-bucket, body.single section .container .card ul.footer-bucket {
+      background: #E8F1F3;
+      overflow: auto;
+      padding: 10px 0; }
+      body.page section .container .card ul.footer-bucket li, body.single section .container .card ul.footer-bucket li {
+        float: left;
+        width: 50%;
+        text-align: center; }
+        body.page section .container .card ul.footer-bucket li a, body.single section .container .card ul.footer-bucket li a {
+          padding: 8px 0;
+          display: block; }
+        body.page section .container .card ul.footer-bucket li:last-child, body.single section .container .card ul.footer-bucket li:last-child {
+          display: none; } }
 @media screen and (max-width: 767px) {
+  .navbar .navbar-header .navbar-brand {
+    background-size: auto 38px;
+    background-position: center center;
+    padding: 0;
+    margin-top: 8px;
+    width: 200px;
+    height: 40px; }
   .navbar .navbar-toggle {
-    margin-top: 24px;
+    margin: 5px 5px 0 0;
     border: none; }
     .navbar .navbar-toggle:hover {
       background: transparent; }
@@ -850,133 +889,151 @@ body.home .faq .btn-primary {
       font-size: 9px;
       color: #e63d25;
       text-transform: uppercase; }
-  .navbar .navbar-collapse .navbar-nav.utility {
-    position: relative;
-    right: auto;
-    top: auto; }
-    .navbar .navbar-collapse .navbar-nav.utility li {
-      width: 33%;
-      margin-bottom: 15px; }
-      .navbar .navbar-collapse .navbar-nav.utility li a {
-        font-size: 14px; }
-        .navbar .navbar-collapse .navbar-nav.utility li a:hover {
-          text-decoration: none;
+  .navbar .navbar-collapse .navbar-nav {
+    margin-top: 10px; }
+    .navbar .navbar-collapse .navbar-nav.utility {
+      position: relative;
+      right: auto;
+      top: auto; }
+      .navbar .navbar-collapse .navbar-nav.utility li {
+        width: 33%;
+        margin-bottom: 15px; }
+        .navbar .navbar-collapse .navbar-nav.utility li a {
+          font-size: 14px; }
+          .navbar .navbar-collapse .navbar-nav.utility li a:hover {
+            text-decoration: none;
+            color: #2484ce; }
+    .navbar .navbar-collapse .navbar-nav li {
+      float: left;
+      width: 50%;
+      text-align: center; }
+      .navbar .navbar-collapse .navbar-nav li:last-child {
+        padding-right: 12px; }
+        .navbar .navbar-collapse .navbar-nav li:last-child a {
           color: #2484ce; }
-  .navbar .navbar-collapse .navbar-nav li {
-    float: left;
-    width: 50%;
-    text-align: center; }
-    .navbar .navbar-collapse .navbar-nav li.phone {
-      clear: both;
-      float: none;
-      width: 100%;
-      margin-bottom: 10px; }
-    .navbar .navbar-collapse .navbar-nav li a {
-      padding: 15px;
-      font-size: 16px;
-      line-height: 1.2; }
+      .navbar .navbar-collapse .navbar-nav li a {
+        padding: 12px;
+        font-size: 15px;
+        line-height: 1.2; }
 
-  body.home section {
+  body.home.page .container {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
+  body.home.page section {
     overflow-x: hidden;
-    padding: 3em 0; }
-    body.home section h1, body.home section h2 {
+    padding: 3em 0 !important; }
+    body.home.page section h1, body.home.page section h2 {
       font-size: 2em; }
-    body.home section .btn-default {
+    body.home.page section .btn-default {
       border: 1px solid #dadada; }
-  body.home .hero {
+  body.home.page .hero {
     display: block;
     background-position: 78% 0%;
-    min-height: 420px; }
-    body.home .hero h1 {
-      font-size: 2.5em;
+    min-height: 420px;
+    padding: 2em 0 !important; }
+    body.home.page .hero h1 {
+      font-size: 2.25em;
       margin-top: 0; }
-    body.home .hero h2 {
+    body.home.page .hero h2 {
       font-size: 18px; }
-  body.home .logos .logo {
+  body.home.page .logos .logo {
     width: 50%; }
-    body.home .logos .logo.top {
+    body.home.page .logos .logo.top {
       margin-bottom: 15px; }
-    body.home .logos .logo.bottom {
+    body.home.page .logos .logo.bottom {
       margin-top: 15px; }
-  body.home .features .tabbable {
+  body.home.page .features .tabbable {
     margin: 0; }
-  body.home .features .nav-tabs {
+  body.home.page .features .nav-tabs {
     list-style-type: disc;
     border: none;
     border-bottom: 1px solid #efefef;
     margin-bottom: 15px; }
-    body.home .features .nav-tabs li {
+    body.home.page .features .nav-tabs li {
       display: block;
       list-style-type: disc;
       margin-bottom: 10px;
       width: 50%; }
-      body.home .features .nav-tabs li a {
+      body.home.page .features .nav-tabs li a {
         background: transparent;
         text-align: center;
         color: #2484ce;
         border: none;
         padding: 0; }
-      body.home .features .nav-tabs li.active a {
+      body.home.page .features .nav-tabs li.active a {
         background: transparent;
         font-weight: bold;
         border: none;
         color: #2484ce; }
-      body.home .features .nav-tabs li:last-child {
+      body.home.page .features .nav-tabs li:last-child {
         width: 100%; }
-  body.home .features .tab-content .tab-pane {
+  body.home.page .features .tab-content .tab-pane {
     padding: 0px;
     background: transparent;
     border: none; }
-    body.home .features .tab-content .tab-pane h3 {
+    body.home.page .features .tab-content .tab-pane h3 {
       font-size: 18px;
       text-align: left;
       margin-bottom: 10px;
       font-weight: normal;
       line-height: 1.3; }
-    body.home .features .tab-content .tab-pane .btn-lg {
+    body.home.page .features .tab-content .tab-pane .btn-lg {
       width: 100%;
       display: block;
       margin-bottom: 10px; }
-    body.home .features .tab-content .tab-pane .btn-default {
+    body.home.page .features .tab-content .tab-pane .btn-default {
       border: 1px solid #dadada; }
-  body.home .pricing .card {
-    border: 1px solid #dadada;
-    padding: 15px;
-    text-align: left;
-    margin-bottom: 1em; }
-    body.home .pricing .card h2 {
+  body.home.page .pricing .card {
+    background: none;
+    border-bottom: 1px solid #efefef; }
+    body.home.page .pricing .card h2 {
       margin: 0px 5px 0 0;
       display: inline-block;
       text-align: left;
       font-size: 26px;
       font-weight: normal; }
-    body.home .pricing .card h3 {
+    body.home.page .pricing .card h3 {
       display: inline-block;
       text-align: left;
       margin-bottom: 15px; }
-      body.home .pricing .card h3 small {
+      body.home.page .pricing .card h3 small {
         margin: 0; }
-    body.home .pricing .card .save {
+    body.home.page .pricing .card .btn-primary {
+      display: block;
+      padding: 10px 30px;
+      width: 60%;
+      margin: 0 auto; }
+    body.home.page .pricing .card .save {
       top: -10px;
       right: -10px;
       border: none;
       width: 52px;
       height: 52px; }
-  body.home .testimonials h1 {
+  body.home.page .testimonials h1 {
     font-size: 24px; }
-  body.home .testimonials blockquote {
+  body.home.page .testimonials .testimonial {
+    display: none; }
+    body.home.page .testimonials .testimonial:first-child {
+      display: block; }
+      body.home.page .testimonials .testimonial:first-child blockquote {
+        border: none; }
+  body.home.page .testimonials blockquote {
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     margin-bottom: 20px; }
-  body.home .faq h1 {
+  body.home.page .faq h1 {
     font-size: 22px; }
-  body.home .faq p.text-center {
+  body.home.page .faq p.text-center {
     font-size: 14px; }
-  body.home .faq .panel-group .panel {
+  body.home.page .faq .panel-group .panel {
     border: 1px solid #ccc; }
-  body.home .faq .panel-group .panel .panel-heading .panel-title a .glyphicon {
+  body.home.page .faq .panel-group .panel .panel-heading .panel-title a .glyphicon {
     margin-right: 4px; }
 
+  .footer span.hidden-xs {
+    display: none !important; }
   .footer .bucket {
     text-align: center;
     padding-bottom: 20px;
@@ -988,9 +1045,168 @@ body.home .faq .btn-primary {
       box-shadow: none;
       margin: 0; }
       .footer .bucket.badges img {
-        margin-top: 0 !important; } }
+        margin-top: 0 !important; }
+
+  body.page .modal .modal-dialog, body.single .modal .modal-dialog {
+    width: 100%;
+    padding: 0; }
+    body.page .modal .modal-dialog .modal-content, body.single .modal .modal-dialog .modal-content {
+      border: none;
+      border-radius: 0; }
+      body.page .modal .modal-dialog .modal-content .modal-body p, body.single .modal .modal-dialog .modal-content .modal-body p {
+        font-size: 15px; }
+  body.page section, body.single section {
+    padding: 0;
+    overflow-x: hidden; }
+    body.page section .container, body.single section .container {
+      padding-left: 0;
+      padding-right: 0; }
+      body.page section .container .card, body.single section .container .card {
+        margin-bottom: 0; }
+        body.page section .container .card article, body.page section .container .card .inner, body.single section .container .card article, body.single section .container .card .inner {
+          padding: 20px 15px; }
+        body.page section .container .card header, body.single section .container .card header {
+          height: 150px; }
+          body.page section .container .card header .overlay, body.single section .container .card header .overlay {
+            height: 150px; }
+            body.page section .container .card header .overlay h1, body.single section .container .card header .overlay h1 {
+              line-height: 150px;
+              font-size: 36px; }
+        body.page section .container .card ul.footer-bucket, body.single section .container .card ul.footer-bucket {
+          background: #efefef;
+          overflow: auto;
+          padding: 10px 0; }
+          body.page section .container .card ul.footer-bucket li, body.single section .container .card ul.footer-bucket li {
+            float: left;
+            width: 50%;
+            text-align: center; }
+            body.page section .container .card ul.footer-bucket li a, body.single section .container .card ul.footer-bucket li a {
+              padding: 8px 0;
+              display: block; }
+            body.page section .container .card ul.footer-bucket li:last-child, body.single section .container .card ul.footer-bucket li:last-child {
+              display: none; }
+    body.page section.about .card, body.single section.about .card {
+      border: none; }
+    body.page section.about.single, body.single section.about.single {
+      background: red; }
+    body.page section.leadership .card header .overlay h1, body.single section.leadership .card header .overlay h1 {
+      font-size: 32px; }
+    body.page section.leadership .card .person, body.single section.leadership .card .person {
+      min-height: 100px;
+      height: auto;
+      margin-bottom: 40px; }
+      body.page section.leadership .card .person:last-child, body.single section.leadership .card .person:last-child {
+        margin-bottom: 0; }
+    body.page section.leadership .card h2, body.single section.leadership .card h2 {
+      font-size: 28px; }
+    body.page section.testimonials .card article blockquote, body.single section.testimonials .card article blockquote {
+      padding: 0; }
+    body.page section.faq, body.single section.faq {
+      padding: 30px 0; }
+      body.page section.faq .container, body.single section.faq .container {
+        padding: 0 15px; }
+      body.page section.faq h1, body.single section.faq h1 {
+        font-size: 28px; }
+    body.page section.press-hits .card article, body.single section.press-hits .card article {
+      padding: 0 10px;
+      margin-bottom: 5px; }
+      body.page section.press-hits .card article small, body.single section.press-hits .card article small {
+        color: #777; }
+      body.page section.press-hits .card article .logo, body.single section.press-hits .card article .logo {
+        background-size: 85px auto; }
+      body.page section.press-hits .card article .table, body.single section.press-hits .card article .table {
+        margin-bottom: 5px; }
+        body.page section.press-hits .card article .table td.col-sm-9, body.single section.press-hits .card article .table td.col-sm-9 {
+          width: 65% !important; }
+      body.page section.press-hits .card article h2, body.single section.press-hits .card article h2 {
+        font-size: 16px;
+        font-weight: normal; }
+    body.page section.press-hits.customers .card article .table td.col-sm-9, body.single section.press-hits.customers .card article .table td.col-sm-9 {
+      width: 100% !important; }
+      body.page section.press-hits.customers .card article .table td.col-sm-9 h2, body.single section.press-hits.customers .card article .table td.col-sm-9 h2 {
+        margin-top: 20px;
+        font-weight: normal; }
+    body.page section.signup .card, body.single section.signup .card {
+      width: 100%;
+      padding: 15px; }
+      body.page section.signup .card h1, body.single section.signup .card h1 {
+        font-size: 22px; }
+  body.page .product .container, body.single .product .container {
+    padding: 0 15px; }
+  body.page .product .hero, body.single .product .hero {
+    padding: 50px 0; }
+    body.page .product .hero h1, body.single .product .hero h1 {
+      font-size: 28px;
+      margin-bottom: 30px; }
+    body.page .product .hero h2, body.single .product .hero h2 {
+      font-size: 18px;
+      display: none; }
+    body.page .product .hero ul, body.single .product .hero ul {
+      margin: 0 0 20px 20px;
+      padding: 0;
+      list-style-type: disc; }
+      body.page .product .hero ul li, body.single .product .hero ul li {
+        font-size: 16px; }
+        body.page .product .hero ul li i, body.single .product .hero ul li i {
+          display: none; }
+  body.page .product section.app, body.page .product section.providers, body.page .product section.patients, body.single .product section.app, body.single .product section.providers, body.single .product section.patients {
+    padding: 40px 0;
+    background-image: none; }
+    body.page .product section.app .btn-primary, body.page .product section.providers .btn-primary, body.page .product section.patients .btn-primary, body.single .product section.app .btn-primary, body.single .product section.providers .btn-primary, body.single .product section.patients .btn-primary {
+      width: 100%; }
+    body.page .product section.app h2, body.page .product section.providers h2, body.page .product section.patients h2, body.single .product section.app h2, body.single .product section.providers h2, body.single .product section.patients h2 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px; }
+    body.page .product section.app img, body.page .product section.providers img, body.page .product section.patients img, body.single .product section.app img, body.single .product section.providers img, body.single .product section.patients img {
+      margin-bottom: 20px; }
+  body.page .pricing, body.single .pricing {
+    padding: 3em 0; }
+    body.page .pricing .container, body.single .pricing .container {
+      padding: 0 15px; }
+    body.page .pricing .hero, body.single .pricing .hero {
+      display: none; }
+    body.page .pricing .card, body.single .pricing .card {
+      background: white;
+      border-color: #dadada;
+      margin-bottom: 20px !important; }
+      body.page .pricing .card h2, body.single .pricing .card h2 {
+        margin: 0px 5px 0 0;
+        display: inline-block;
+        text-align: left;
+        font-size: 26px;
+        font-weight: normal; }
+      body.page .pricing .card h3, body.single .pricing .card h3 {
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 15px; }
+        body.page .pricing .card h3 small, body.single .pricing .card h3 small {
+          margin: 0; }
+      body.page .pricing .card .btn-primary, body.single .pricing .card .btn-primary {
+        display: block;
+        padding: 10px 30px;
+        width: 60%;
+        margin: 0 auto; }
+      body.page .pricing .card .save, body.single .pricing .card .save {
+        display: none;
+        top: -10px;
+        right: -10px;
+        border: none;
+        width: 52px;
+        height: 52px; }
+
+  body.page-id-508 .about .container .card header .overlay h1 {
+    font-size: 30px; }
+  body.page-id-508 .about .container .card form fieldset {
+    max-width: 100%;
+    padding: 0;
+    margin: 0; }
+    body.page-id-508 .about .container .card form fieldset .form-control, body.page-id-508 .about .container .card form fieldset label, body.page-id-508 .about .container .card form fieldset input[type="submit"] {
+      max-width: 290px; } }
 .footer {
   margin-top: 0; }
+  .footer .hidden-xs {
+    display: inline-block !important; }
   .footer .bucket h3 {
     text-transform: uppercase;
     font-size: 16px;

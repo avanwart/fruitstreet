@@ -10,14 +10,14 @@ Template Name: Careers
 		<div class="row">
 			<div class="col-lg-11 col-md-12">
 				<div class="row">
-					<div class="col-sm-3 hidden-xs">
+					<div class="col-sm-12 col-md-3 hidden-xs hidden-sm">
 						<div class="well">
 							<?php
 								get_sidebar();
 							?>
 						</div>
 					</div>
-					<div class="col-sm-9 main-content">
+					<div class="col-sm-12 col-md-9 main-content">
 						<div class="card">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<?php
@@ -29,6 +29,11 @@ Template Name: Careers
 									<h1 class="page-title"><?php the_title(); ?></h1>
 								</div>
 							</header>
+							<div class="row visible-xs visible-sm">
+								<div class="col-sm-12">
+									<?php footer_bucket_1(); ?>
+								</div>
+							</div>
 							<div class="inner">
 								<?php the_content(); ?>
 								<div class="text-center">
@@ -41,30 +46,30 @@ Template Name: Careers
 								</div>
 				        <div class="row">
 				          <div class="col-sm-4 text-center">
-				              <h3>401k Matching</h3>
-				              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				              <h3>401k</h3>
+				              <p>Monthly contributions toward your retirement fund..</p>
 				          </div>
 				          <div class="col-sm-4 text-center">
 				              <h3>Health Insurance</h3>
-				              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				              <p>Little to no copay and low deductibles.</p>
 				          </div>
 				          <div class="col-sm-4 text-center">
 				              <h3>Paid Time Off</h3>
-				              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				              <p>We offer 3 weeks paid vacation each year.</p>
 				          </div>
 				        </div>
 				        <div class="row">
 				          <div class="col-sm-4 text-center">
 				              <h3>Gym Membership</h3>
-				              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				              <p>Full access to fitness equipment, exercise classes, pool and more.</p>
 				          </div>
 				          <div class="col-sm-4 text-center">
 				              <h3>Company Events</h3>
-				              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				              <p>Each quarter we take a day off to do something fun together.</p>
 				          </div>
 				          <div class="col-sm-4 text-center">
 				              <h3>Yearly Bonuses</h3>
-				              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				              <p>We make sure to reward our people for hard work.</p>
 				          </div>
 				        </div>
 				        <div class="text-center"><hr></div>

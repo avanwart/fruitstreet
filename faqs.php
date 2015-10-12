@@ -5,15 +5,15 @@ Template Name: FAQs
 ?>
 
 <?php get_header(); ?>
-<section class="hero">
+<?php /*<section class="hero">
 	<div class="container text-center">
 		<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-			<h1>FAQs</h1>
-			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+			<h1>Frequently Asked Questions</h1>
+			<p class="intro">Get answers to your questions below. <br class="hidden-xs"/>Can't find the answer to your question? <a href="<?php bloginfo('url'); ?>/contact">Contact us &raquo;</a>.</p>
 			<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
 		</div>
 	</div>
-</section>
+</section>*/ ?>
 
 
 <section class="faq motif">
@@ -53,6 +53,7 @@ Template Name: FAQs
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
+				<p class="text-center">Can't find the answer to your question? <a href="<?php bloginfo('url'); ?>/contact">Contact us &raquo;</a></p>
 				<p class="text-center"><a href="#hero" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a></p>
 			</div>
 		</div>

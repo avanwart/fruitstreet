@@ -37,7 +37,7 @@
 
 				</div> <!-- end #inner-footer -->
 
-				<p class="text-center source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?><br class="visible-xs"><span class="hidden-xs">&nbsp;&nbsp;|</span> <a href="?p=175">Terms &amp; Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="?p=547">Privacy Policy</a></p>
+				<p class="text-center source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?><br class="visible-xs"><span class="hidden-xs">&nbsp;&nbsp;|</span> <a href="<?php bloginfo('url'); ?>/terms-and-conditions">Terms &amp; Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php bloginfo('url'); ?>/privacy">Privacy Policy</a></p>
 
 				</div> <!-- end .container -->
 
@@ -48,6 +48,9 @@
 		<!-- all js scripts are loaded in library/bones.php -->
 
 		<?php wp_footer(); ?>
+
+		<!-- CallRail Tracking -->
+		<script type="text/javascript" src="//cdn.callrail.com/companies/173038327/88df83cbb19ab0266323/12/swap.js"></script>
 
 	</body>
 

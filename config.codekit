@@ -3355,6 +3355,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/harvard-campus.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 92046,
+		"inputAbbreviatedPath": "\/library\/images\/harvard-campus.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/harvard-campus.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/hatem.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3784,6 +3795,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/patient3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18362,
+		"inputAbbreviatedPath": "\/library\/images\/patient3.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/patient3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/patrick.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3813,6 +3835,17 @@
 		"initialSize": 20743,
 		"inputAbbreviatedPath": "\/library\/images\/provider.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/provider.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/provider2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17854,
+		"inputAbbreviatedPath": "\/library\/images\/provider2.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/provider2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3883,6 +3916,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/rowers.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 157165,
+		"inputAbbreviatedPath": "\/library\/images\/rowers.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/rowers.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/samir.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3945,6 +3989,17 @@
 		"initialSize": 6827,
 		"inputAbbreviatedPath": "\/library\/images\/Traci-K.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/Traci-K.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/university-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 79436,
+		"inputAbbreviatedPath": "\/library\/images\/university-2.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/university-2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

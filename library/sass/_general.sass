@@ -2,6 +2,7 @@ $black: #212121
 $ash: #f9f9f9
 $blue: #2484ce
 $lightBlue: #52bdce
+$babyBlue: #ebf2f7
 $mint: #E8F1F3
 $berry: #f6dcd8
 $red: #e63d25
@@ -38,6 +39,14 @@ body
 
 section
 	padding: 4em 0
+	article
+		ul
+			margin-bottom: 30px
+			li
+				margin-bottom: 15px
+	li.current-menu-item
+		a
+			font-weight: bold
 	&.dark
 		color: white
 	&.light
@@ -48,6 +57,9 @@ section
 	&.yellow
 		background-color: $yellow
 		color: #53451a
+	&.babyBlue
+		background-color: $babyBlue
+		color: $black
 	&.mint
 		background-color: $mint
 	&.berry

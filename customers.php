@@ -11,14 +11,14 @@ Template Name: Customers
 		<div class="row">
 			<div class="col-lg-11 col-md-12">
 				<div class="row">
-					<div class="col-sm-3 hidden-xs">
+					<div class="col-sm-12 col-md-3 hidden-xs hidden-sm">
 						<div class="well">
 							<?php
 								get_sidebar();
 							?>
 						</div>
 					</div>
-					<div class="col-sm-9 main-content">
+					<div class="col-sm-12 col-md-9 main-content">
 						<div class="card">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<?php
@@ -30,6 +30,12 @@ Template Name: Customers
 									<h1 class="page-title"><?php the_title(); ?></h1>
 								</div>
 							</header>
+
+							<div class="row visible-xs visible-sm">
+								<div class="col-sm-12">
+									<?php footer_bucket_2(); ?>
+								</div>
+							</div>
 							
 							<?php if(get_field('customers')): ?>
 
@@ -43,7 +49,7 @@ Template Name: Customers
 													<h2><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('company'); ?></a></h2>
 													<p><?php the_sub_field('excerpt'); ?></p>
 												</td>
-												<td class="logo col-sm-3" style="background-image: url('<?php the_sub_field('logo'); ?>')">
+												<td class="logo col-sm-3 hidden-xs" style="background-image: url('<?php the_sub_field('logo'); ?>')">
 													&nbsp;
 												</td>
 											</tr>
