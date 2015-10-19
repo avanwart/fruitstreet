@@ -3828,6 +3828,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/placeholder-profile-pic.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6374,
+		"inputAbbreviatedPath": "\/library\/images\/placeholder-profile-pic.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/placeholder-profile-pic.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/provider.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
