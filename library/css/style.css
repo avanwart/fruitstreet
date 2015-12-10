@@ -2270,6 +2270,18 @@ input[type="button"].btn-block {
 .glyphicon-time:before {
   content: "\e023";
 }
+.glyphicon-triangle-right:before {
+  content: "\e250";
+}
+.glyphicon-triangle-left:before {
+  content: "\e251";
+}
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
 .glyphicon-road:before {
   content: "\e024";
 }

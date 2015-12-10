@@ -31,22 +31,22 @@ Template Name: Pricing
 							<div class="card">
 								<h2>Monthly</h2>
 								<h3>$300/mo.</h3>
-								<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
+								<a href="<?php bloginfo('url'); ?>/sign-up?plan=monthly" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="card">
-								<div class="save">Save<br>20%</div>
+								<div class="save">Save<br>33%</div>
 								<h2>Yearly</h2>
 								<h3>$200/mo.</h3>
-								<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
+								<a href="<?php bloginfo('url'); ?>/sign-up?plan=annual" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="card">
 								<h2>Enterprise</h2>
-								<h3><small>Contact for Pricing</small></h3>
-								<a href="<?php bloginfo('url'); ?>/contact" class="btn btn-primary btn-lg">Contact Us <i class="glyphicon glyphicon-chevron-right"></i></a>
+								<h3><small>5+ user accounts</small></h3>
+								<a href="<?php bloginfo('url'); ?>/enterprise-accounts" class="btn btn-primary btn-lg">Contact Us <i class="glyphicon glyphicon-chevron-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -54,28 +54,25 @@ Template Name: Pricing
 			</div>
 		</div>
 	</section>
-
-	<!-- <section class="about light">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-11 col-md-12">
-					<div class="row">
-						<h3>The Fruit Street App</h3>
+		<section class="providers motif">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9 col-md-6 col-md-offset-1">
+						<h2>Special Features For Providers</h2>
 						<ul>
-							<li>Patients can easily track their physical activity levels using wearable devices and view your FitBit data (coming soon)
-								</li>
-							<li> The user dashboard provides patients with a snapshot of number of steps taken, hours slept, calories burned, heart rate, blood pressure and blood glucose. </li>
-							<li>Easily create a food diary and take notes alongside your images </li>
-							<li>View goals your healthcare provider sets for you (coming soon)					    </li>
-							<li>Conduct a video consultation with your healthcare provider (coming soon) </li>
-									</ul>
-					</div>
-				</div>			
-			</div>
+							<li>Create customized health questionnaires and intake forms</li>
+							<li>Set your availability for video consultations</li>
+							<li>Set patient goals and monitor their progress</li>
+							<li>Collect credit card payments for video consultations</li>
+							<li>Send HIPAA compliant chat messages to your patients </li>
+							<li>Maintain clinical notes during a video call and view past session notes</li>
+						</ul>
+					</div>		
 					
-		</div>
-	</section> -->
-</div>
+				</div>
+			</div>
+		</section>
+	</div>
 
 <script>
 	jQuery(document).ready(function($){

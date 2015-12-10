@@ -8,38 +8,55 @@
 					<div class="row">
 
 						<!-- Footer Bucket 1 -->
-						<div class="col-sm-3 bucket">
+						<div class="col-sm-2 bucket">
 							<h3>Company</h3>
 							<?php footer_bucket_1(); ?>
 						</div>
 
 						<!-- Footer Bucket 2 -->
-						<div class="col-sm-3 bucket">
-							<h3>Product</h3>
+						<div class="col-sm-2 bucket">
+							<h3>Services</h3>
 							<?php footer_bucket_2(); ?>
 						</div>
 						
 						<!-- Footer Bucket 3 -->
-						<div class="col-sm-3 bucket resources">
-							<h3>Resources</h3>
+						<div class="col-sm-2 bucket resources">
+							<h3>Gifts</h3>
 							<?php footer_bucket_3(); ?>
 						</div>
 
 						<!-- Footer Bucket 4 -->
-						<div class="col-sm-3 bucket badges">
-							<h3>Certifications</h3>
-							<img src="<?php bloginfo('template_directory'); ?>/library/images/bbb-logo.gif" alt="">
-							<img src="<?php bloginfo('template_directory'); ?>/library/images/certified-b.jpg" alt="">
-							<!-- disable bucket 4 if you want to put logos there instead -->
-							<?php /* footer_bucket_4(); */ ?>
+						<div class="col-sm-2 bucket badges">
+							<h3>For Stylists</h3>
+							<?php footer_bucket_4(); ?>
+
+						</div>
+
+						<div class="col-sm-3 bucket">
+							<h3>Contact Us</h3>
+								<ul>
+									<li>Customer Support: 310-362-6190</li>
+									<li>Email: info@beglammed.com</li>
+								</ul>
 						</div>
 					</div>
 
 				</div> <!-- end #inner-footer -->
 
-				<p class="text-center source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?><br class="visible-xs"><span class="hidden-xs">&nbsp;&nbsp;|</span> <a href="<?php bloginfo('url'); ?>/terms-and-conditions">Terms &amp; Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php bloginfo('url'); ?>/privacy">Privacy Policy</a></p>
+				
 
 				</div> <!-- end .container -->
+
+				<div class="outter-footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<img class="brand" src="<?php bloginfo('template_directory'); ?>/library/images/logo-white-2x.png" alt="">
+								<p class="text-center source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?><br class="visible-xs"><span class="hidden-xs">&nbsp;&nbsp;|</span> <a href="<?php bloginfo('url'); ?>/terms-and-conditions">Terms &amp; Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php bloginfo('url'); ?>/privacy">Privacy Policy</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</footer> <!-- end footer -->
 
@@ -51,6 +68,9 @@
 
 		<!-- CallRail Tracking -->
 		<script type="text/javascript" src="//cdn.callrail.com/companies/173038327/88df83cbb19ab0266323/12/swap.js"></script>
+
+		<!-- SumoMe -->
+		<!--<script src="//load.sumome.com/" data-sumo-site-id="8ea7bbbc99007875caa321e343bce24337fdd0998cc7b21441e03fdfb5bf46eb" async="async"></script>-->
 
 	</body>
 

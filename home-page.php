@@ -7,150 +7,94 @@ Template Name: Home Page
 <?php get_header(); ?>
 <section class="hero">
 	<div class="container">
-		<div class="col-sm-12 col-md-10  col-lg-8 col-lg-offset-1">
-			<h1>Telehealth Software for <br class="visible-lg visible-md visible-sm"/>Medical &amp; Health Professionals</h1>
-			<h2>Conduct HIPAA-compliant paid video calls, monitor patients' diet and lifestyle, and improve patient outcomes.</h2>
-			<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
+		<div class="row">
+			<div class="col-sm-6">
+				<h1>Look Your Best</h1>
+				<h2>Top rated beauty professionals <br class="hidden-xs"/>come directly to you.</h2>
+			</div>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+				<form action="" class="form">
+					<div class="form-group">
+						<div class="input-group">
+							<select name="location" id="location" class="form-control">
+								<option value="">Location</option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+							<select name="date" id="date" class="form-control">
+								<option value="">Date</option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+							<select name="time" id="time" class="form-control">
+								<option value="">Time</option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+							<div class="input-group-btn">
+								<button class="btn btn-primary">Book an Appointment</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 		</div>
 	</div>
 </section>
 <section class="logos lightGrey">
 	<div class="container">
 		<div class="row">
-			<div class="logo top"><img src="<?php bloginfo('template_directory'); ?>/library/images/bloomberg-logo.jpg" alt=""></div>
-			<div class="logo top"><img src="<?php bloginfo('template_directory'); ?>/library/images/reuters-logo.jpg" alt=""></div>
-			<div class="logo bottom"><img src="<?php bloginfo('template_directory'); ?>/library/images/yahoo-logo.jpg" alt=""></div>
-			<div class="logo bottom"><img src="<?php bloginfo('template_directory'); ?>/library/images/wired-logo.jpg" alt=""></div>
-			<div class="logo health hidden-xs"><img src="<?php bloginfo('template_directory'); ?>/library/images/health-logo.jpg" alt=""></div>
-		</div>
-	</div>
-</section>
-
-<section class="features ash" id="features">
-	<div class="container">
-		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="push">Product Features</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-lg-10 col-lg-offset-1">
-				<div role="tabpanel" class="tabbable">
-					<!-- Nav tabs -->
-					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Telehealth Clinic</a></li>
-						<li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">Powered by VSee</a></li>
-						<li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab">Device Integration</a></li>
-						<li role="presentation"><a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab">Provider Portal</a></li>
-						<li role="presentation"><a href="#tab5" aria-controls="settings" role="tab" data-toggle="tab">Patient Portal</a></li>
-					</ul>
-					<!-- Tab panes -->
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active motif" id="tab1">
-							<div class="row">
-								<div class="col-sm-10 col-md-8">
-									<h3>HIPAA Compliant Telehealth Clinic</h3>
-									<p>Fruit Street is designed for healthcare professionals who want to conduct HIPAA compliant video consultations with their patients and monitor/influence the diet and lifestyle of their patients using wearable devices and mobile applications. Fruit Street is a 100% HIPAA compliant telehealth solution.</p>
-									<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
-								</div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade vsee" id="tab2">
-							<div class="row">
-								<div class="col-sm-12 col-md-8">
-									<h3>HIPAA Compliant Video Powered by VSee</h3>
-									<p>Fruit Street enables healthcare professionals to conduct HIPAA compliant video consultations with their patients. The video engine found within Fruit Street is called VSee, which is the world’s most bandwidth efficient video conferencing technology. This means that you will be able to have high definition video calls with your patients without worrying about dropped calls or a choppy connection. VSee is so bandwidth efficient that is was selected by NASA for use on the International Space Station. VSee is a HIPAA compliant, FDA-registered video conferencing telehealth solution.</p>
-									<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=516" class="btn btn-lg btn-default">More on HIPAA Compliance <i class="glyphicon glyphicon-chevron-right"></i></a>
-								</div>
-								<div class="hidden-sm col-md-4">
-									<img src="<?php bloginfo('template_directory'); ?>/library/images/vsee-logo.jpg" class="img-responsive" alt="">
-								</div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade fitbit" id="tab3">
-							<div class="row">
-								<div class="col-sm-10 col-md-8">
-									<h3>Wearable Device &amp; Mobile App Integration</h3>
-									<p>The Fruit Street personal health record allows patients to upload data from wearable devices such as the Fitbit Flex and Fitbit Aria Scale. The Fruit Street mobile app also allows patients to share a visual food diary with their healthcare provider. Soon Fruit Street will integrate with FDA-approved blood pressure cuffs and glucometers for blood pressure and glucose monitoring. This wearable device and mobile app integration allows healthcare professionals to accurately monitor the diet and lifestyle of their patients in real time.</p>
-									<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
-								</div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade provider" id="tab4">
-							<h3>Provider Portal</h3>
-							<div class="row">
-								<div class="col-sm-12 col-md-7">
-									<p>The Fruit Street telehealth portal offers one interface for patients and one interface for healthcare professionals. The provider interface is designed for registered dietitians, primary care physicians, cardiologists, bariatric surgeons, health coaches, and other healthcare professionals that wish to set up a telehealth clinic. This HIPAA compliant telehealth portal was designed with the input of more than 50 physicians on our advisory board and we’re constantly adding new features based on feedback from our users.</p>
-									<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
-								</div>
-								<div class="col-md-4 hidden-sm hidden-xs">
-									<img src="<?php bloginfo('template_directory'); ?>/library/images/provider2.jpg" class="img-responsive img-thumbnail" alt="">
-								</div>
-							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade patient" id="tab5">
-							<h3>Patient Portal</h3>
-							<div class="row">
-								<div class="col-sm-12 col-md-7">
-									<p>The Fruit Street patient portal allows healthcare providers to communicate and conduct video consultations with their patients using HIPAA compliant telehealth software. Each patient has a personal health record which integrates with wearable devices and mobile applications such as the Fitbit Flex and Fitbit Aria scale. These devices and apps record data such as physical activity, sleep, heart rate, and dietary intake. These devices sync wirelessly with the Fruit Street personal health record and send data to the patient’s health care provider in real time.</p>
-									<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a><a href="?p=498" class="btn btn-lg btn-default">Take the product tour <i class="glyphicon glyphicon-chevron-right"></i></a>
-								</div>
-								<div class="col-md-4 hidden-sm hidden-xs">
-									<img src="<?php bloginfo('template_directory'); ?>/library/images/patient3.jpg" class="img-responsive img-thumbnail" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<img src="<?php bloginfo('template_directory'); ?>/library/images/logo-bar-desktop.jpg" alt="Marie Claire logo, People logo, Vanity Fair logo, Nylon logo, Los Angeles Times logo">
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="pricing" id="pricing">
+<section class="features" id="features">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="flat">Simple Pricing.</h2>
-				<p class="intro">Try it free for 14 days.</p>
+				<h2 class="push">Beauty for Any Occassion</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="card">
-							<h2>Monthly</h2>
-							<h3>$300/mo.</h3>
-							<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="card">
-							<div class="save">Save<br>20%</div>
-							<h2>Yearly</h2>
-							<h3>$200/mo.</h3>
-							<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-primary btn-lg">Get Started <i class="glyphicon glyphicon-chevron-right"></i></a>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="card">
-							<h2>Enterprise</h2>
-							<h3>Contact for Pricing</h3>
-							<a href="contact" class="btn btn-primary btn-lg">Contact Us <i class="glyphicon glyphicon-chevron-right"></i></a>
-						</div>
-					</div>
-				</div>
+			<div class="col-sm-4 text-center">
+				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/individuals-service.jpg" alt="">
+				<h3>Individuals</h3>
+				<p>Full makeup and hair styling in the comfort of your home, office or hotel.</p>
+				<a href="#" class="btn btn-primary">Book Now</a> <a href="#" class="btn btn-default">Learn more</a>
+			</div>
+			<div class="col-sm-4 text-center">
+				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/groups-service.jpg" alt="">
+				<h3>Groups</h3>
+				<p>Perfect for a night out on the town, corporate events or photo shoots.</p>
+				<a href="#" class="btn btn-primary">Book Now</a> <a href="#" class="btn btn-default">Learn more</a>
+			</div>
+			<div class="col-sm-4 text-center">
+				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/wedding-service.jpg" alt="">
+				<h3>Weddings</h3>
+				<p>Full service appointments for brides and bridesmaids for weddings, rehearsals, bridal showers and engagements.</p>
+				<a href="#" class="btn btn-primary">Book Now</a> <a href="#" class="btn btn-default">Learn more</a>
+			</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="testimonials babyBlue">
+<section class="testimonials ash">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1>Doctors &amp; Hospitals <i class="glyphicon glyphicon-heart"></i> Us</h1>
+				<h2>Our Clients <i class="glyphicon glyphicon-heart"></i> beGlammed</h2>
 			</div>
 		</div>
 		<!-- Get Testimonials Custom Fields from the Page -->
@@ -161,7 +105,7 @@ Template Name: Home Page
 					<div class="col-sm-4 text-center testimonial">
 						<img class="thumbnail img-circle" src="<?php the_sub_field('headshot'); ?>" alt="">
 						<blockquote>
-							<?php the_sub_field('quote'); ?> <small><?php the_sub_field('name'); ?>	<em><?php the_sub_field('company'); ?></em></small>
+							&ldquo;<?php the_sub_field('quote'); ?>&rdquo; <small><?php the_sub_field('name'); ?>,	<em><?php the_sub_field('city'); ?></em></small>
 						</blockquote>
 					</div>
 				<?php endwhile; ?>
@@ -176,7 +120,7 @@ Template Name: Home Page
 		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<a href="sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
+				<a href="sign-up" class="btn btn-primary">Book Now</a>
 			</div>
 		</div>
 	</div>
@@ -200,7 +144,7 @@ Template Name: Home Page
 								<div class="panel-heading">
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php the_sub_field('id'); ?>" class="collapsed">
-											<i class="glyphicon glyphicon-plus"></i><i class="glyphicon glyphicon-minus"></i>	<?php the_sub_field('question'); ?>
+											<i class="glyphicon glyphicon-triangle-right"></i><i class="glyphicon glyphicon-triangle-bottom"></i>	<?php the_sub_field('question'); ?>
 										</a>
 									</h4>
 								</div>
@@ -220,51 +164,33 @@ Template Name: Home Page
 		<div class="row">
 			<div class="col-sm-12">
 				<p class="text-center">
-					Don't see your question here?  <a href="?p=510">More FAQs &raquo;</a><br><br>
-					<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
+					Don't see your question here?  <a href="?p=510">More FAQs &raquo;</a>
 				</p>
 			</div>
 		</div>
 	</div>
 </section>
 
-<div class="modal fade" id="login">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Modal title</h4>
+<section class="app ash">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-1 text-right">
+				<img src="<?php bloginfo('template_directory'); ?>/library/images/iphone.jpg" class="phone" alt="">
 			</div>
-			<div class="modal-body">
-				<form action="https://fruitstreet.com/admin/users/login" novalidate="novalidate" id="LoginForm" class="form-vertical login-form" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"><input type="hidden" name="data[_Token][csrfToken]" value="1cfa2f07ee979fb0d63b4c3020db70f54a815400" id="_TokenCsrfToken"><input type="hidden" name="data[_Token][key]" id="Token154534633" value="42d7a74582e2c4f9609e17acb2b0f832497d2b75"></div>
-					<!-- Input Fields -->
+			<div class="col-sm-4">
+				<h2>beGlammed for iOS &amp; Android</h2>
+				<form action="">
 					<div class="form-group">
-						<div class="input-group">
-							<span class="input-group-addon"><span class="fa fa-fw fa-user"></span></span>
-							<input name="data[AppUser][username]" class="form-control valid" placeholder="Username" autocomplete="off" type="text" id="AppUserUsername" required="required" aria-required="true" aria-invalid="false">            </div>
-						</div>
-						<div class="form-group">
-							<div class="input-group">
-								<span class="input-group-addon"><span class="fa fa-fw fa-lock"></span></span>
-								<input name="data[AppUser][password]" class="form-control" placeholder="Password" type="password" id="AppUserPassword" required="required" aria-required="true">            </div>
-							</div>
-							<!-- /Input Fields -->
-
-							<!-- Form Actions -->
-							<div class="form-actions text-right">
-								<button type="submit" class="submit btn btn-primary">
-									Sign In <i class="fa fa-angle-right"></i>
-								</button>
-							</div>
-							<div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="563ebab47539464574e6038fe5b462817c5ebcca%3A" id="TokenFields368141681"><input type="hidden" name="data[_Token][unlocked]" value="" id="TokenUnlocked86238078"></div></form>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
+						<label for="mobile">Put in your number and we'll text you a link</label>
+						<input class="form-control input-lg" type="tel" id="mobile" placeholder="203-322-2345">
 					</div>
-				</div>
+					<button class="btn btn-lg btn-primary btn-block">Text me a link</button>
+				</form>
+				<img src="<?php bloginfo('template_directory'); ?>/library/images/app-badges.jpg" class="img-responsive" alt="">
 			</div>
+		</div>
+	</div>
+</section>
 
 <script>
 	jQuery(document).ready(function($){

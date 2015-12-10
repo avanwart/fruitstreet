@@ -24,7 +24,7 @@ Template Name: Product
 						<li><i class="glyphicon glyphicon-ok"></i> Share your screen and make comments</li>
 						<li><i class="glyphicon glyphicon-ok"></i> Brand your telehealth portal with your practice’s logo</li>
 					</ul>
-					<a href="<?php bloginfo('url'); ?>/sign-up" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
+					<a href="<?php bloginfo('url'); ?>/sign-up?plan=monthly" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a>
 				</div>
 			</div>
 		</div>
@@ -34,12 +34,12 @@ Template Name: Product
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2 col-md-6">
+						<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
 							<div class="video-wrapper">
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/CvVCI14fxjE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
-						<div class="col-sm-10 col-sm-offset-1 col-md-6">
+						<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
 							<h2 class="text-center">The Fruit Street App</h2>
 							<ul>
 								<li>Patients can easily track their physical activity levels using wearable devices and view their Fitbit data (coming soon)</li>

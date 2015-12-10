@@ -239,7 +239,7 @@ function bones_main_nav() {
     	'container' => false,                           // remove nav container
     	'container_class' => '',			            // class of container (should you choose to use it)
     	'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    	'menu_class' => 'nav navbar-nav hidden-xs',     // adding custom nav class
+    	'menu_class' => 'nav navbar-nav primary hidden-xs',     // adding custom nav class
     	'theme_location' => 'main-nav',                 // where it's located in the theme
     	'before' => '',                                 // before the menu
         'after' => '',                                  // after the menu
@@ -258,7 +258,7 @@ function bones_secondary_nav() {
         'container' => false,                           // remove nav container
         'container_class' => '',                        // class of container (should you choose to use it)
         'menu' => __( 'Secondary Pages Menu', 'bonestheme' ),  // nav name
-        'menu_class' => 'nav navbar-nav hidden-xs',                   // adding custom nav class
+        'menu_class' => 'nav navbar-nav primary hidden-xs',                   // adding custom nav class
         'theme_location' => 'secondary-nav',                 // where it's located in the theme
         'before' => '',                                 // before the menu
         'after' => '',                                  // after the menu
@@ -277,7 +277,7 @@ function bones_mobile_main_nav() {
         'container' => false,                           // remove nav container
         'container_class' => '',                        // class of container (should you choose to use it)
         'menu' => __( 'Mobile Home Page Menu', 'bonestheme' ),  // nav name
-        'menu_class' => 'nav navbar-nav visible-xs',                   // adding custom nav class
+        'menu_class' => 'nav navbar-nav primary visible-xs',                   // adding custom nav class
         'theme_location' => 'mobile-main-nav',                 // where it's located in the theme
         'before' => '',                                 // before the menu
         'after' => '',                                  // after the menu
@@ -296,7 +296,7 @@ function bones_mobile_secondary_nav() {
         'container' => false,                           // remove nav container
         'container_class' => '',                        // class of container (should you choose to use it)
         'menu' => __( 'Mobile Secondary Pages Menu', 'bonestheme' ),  // nav name
-        'menu_class' => 'nav navbar-nav visible-xs',                   // adding custom nav class
+        'menu_class' => 'nav navbar-nav primary visible-xs',                   // adding custom nav class
         'theme_location' => 'mobile-secondary-nav',                 // where it's located in the theme
         'before' => '',                                 // before the menu
         'after' => '',                                  // after the menu
